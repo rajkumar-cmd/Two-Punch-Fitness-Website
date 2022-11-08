@@ -1,12 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Hello
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      #nav_container {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        /* border: 1px solid black; */
+        margin: 0 5rem 0 5rem;
+        /* padding: 2rem; */
+      }
+
+      #brand {
+        /* border: 1px solid green; */
+        width: 10%;
+      }
+
+      #brand > a > img {
+        width: 100%;
+        /* min-height: 4rem; */
+      }
+      #menu_main {
+        width: 70%;
+        display: flex;
+        /* border:  1px solid red; */
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+      }
+      #menu_main a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      #menu_main .membership a,
+      .bl {
+        color: rgb(38, 127, 205);
+      }
+
+      #workout_inner_pages {
+        display: none;
+      }
+      #login {
+        /* border: 1px solid black; */
+        width: 60%;
+      }
+      #menu_controls {
+        width: 20%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .inner_page{
+        width: 100%; 
+        height: 200px; 
+        background-color: rgb(45, 47, 46);
+        color: white;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+      }
+      #workout_info{
+        width: 5%;
+        
+      }
+      #workout_info img{
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="nav_container">
+        <div id="brand">
+          <a href="./index.html"
+            ><img
+              src="https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo.svg"
+              alt=""
+          /></a>
+        </div>
+        <div id="menu_main">
+          <div id="workouts" style="height: 60px">
+            <a href="">WORKOUTS <i class="fa-solid fa-caret-down"></i></a>
+          </div>
+          <div id="programs" id="workout2">
+            <a href="">PROGRAMS <i class="fa-solid fa-caret-down"></i></a>
+          </div>
+          <div id="healthy_living">
+            <a href="">
+              HEALTHY LIVING <i class="fa-solid fa-caret-down"></i
+            ></a>
+          </div>
+          <div id="community">
+            <a href="">COMMUNITY <i class="fa-solid fa-caret-down"></i></a>
+          </div>
+          <div id="about">
+            <a href="">ABOUT <i class="fa-solid fa-caret-down"></i></a>
+          </div>
+          <div class="store"><a href="">STORE</a></div>
+          <div class="membership"><a href="">MEMBERSHIP</a></div>
+        </div>
+        <div id="menu_controls">
+          <div id="login">
+            <div>
+              <span class="bl"> Hi! Sign In </span>
+            </div>
+            <div>
+              <span> MY FITNESS <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- page-1 -->
+      <div id="workout_inner_pages">
+        <div class="inner_page">
+          
+          <div id="workout_info">workout_info  <img src="https://www.nicepng.com/png/full/47-478784_gymnastics-svg-dancer-silhouette-yoga-poses-silhouette-png.png" alt=""></div>
+          <div id="custom">custom</div>
+        </div>
+      </div>
+
+      <!-- page-2 -->
+      <div id="program_inner_pages">
+        <div class="inner_page" >
+          inside program
+        </div>
+      </div>
+
+      <!-- page-3 -->
+      <div id="healthy_living_inner_pages">
+        <div class="inner_page" >
+          inside healthy_living
+        </div>
+      </div>
+
+      <!-- page-4 -->
+      <div id="community_inner_pages">
+        <div class="inner_page" >
+          inside community_inner_pages
+        </div>
+      </div>
+
+      <!-- page-5 -->
+      <div id="about_inner_pages">
+        <div class="inner_page" >
+          inside about
+        </div>
+      </div>
+
+
+
+    </div>
+  </body>
 </html>
+<script type="module" src="./index.js"></script>
