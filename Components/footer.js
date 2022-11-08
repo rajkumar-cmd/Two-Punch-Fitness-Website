@@ -46,8 +46,8 @@ const footer=()=>{
         <div id="lowerFooterElement">
             <div id="lowerFooterElementText">
                 <div>Copyright © 2022 Fitness Blender. All rights reserved.</div>
-                <div>Terms of Use</div>
-                <div>Privacy Policy</div>
+                <div id="govPage">Terms of Use</div>
+                <div id="govPage">Privacy Policy</div>
             </div>
         </div>
         <div id="lowerFooterElementIcon">
