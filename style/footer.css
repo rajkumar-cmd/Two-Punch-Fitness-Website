@@ -2,6 +2,29 @@
     margin: 0;
     padding: 0;
 }
+#footerLogo>img{
+    width: 150px;
+    animation-name: shapes;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+}
+@keyframes shapes{
+    0%{
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+.footerList>a{
+    text-decoration: none;
+    color: white;
+}
 #footer{
     width: 100%;
     height: 650px;
@@ -33,7 +56,6 @@
 }
 .footerTitle{
     font-size: 15px;
-    cursor: pointer;
     margin-bottom: 25px;
 }
 #lowerFooter{
@@ -45,11 +67,27 @@
 }
 .logoFooter>img{
     width: 30px;
+    cursor: pointer;
+}
+.logoFooter>img:hover{
+    width: 40px;
 }
 @media only screen and (min-width: 1793px){
-    #lowerFooterElementText{
-        width: 40%;
+    #lowerFooteron{
         display: flex;
+        justify-content: space-between;
+    }
+    #footerLogo>img{
+        width: 200px;
+    }
+    #footer{
+        height: 500px;
+    }
+    #lowerFooterElementText{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        gap: 10px;
         justify-content: space-between;
     }
     #lowerFooterElementIcon{
@@ -60,7 +98,13 @@
 }
 @media only screen and (min-width: 1471px) and (max-width: 1793px){
     #lowerFooterElementText{
-        width: 50%;
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    #lowerFooteron{
         display: flex;
         justify-content: space-between;
     }
@@ -72,8 +116,15 @@
 }
 @media only screen and (min-width: 1000px) and (max-width: 1470px){
     #lowerFooterElementText{
+        margin-top: 20px;
+        width: 100%;
         display: flex;
+        gap: 10px;
         justify-content: space-around;
+    }
+    #lowerFooteron{
+        display: flex;
+        justify-content: space-between;
     }
     #lowerFooterElementIcon{
         display: flex;
@@ -83,12 +134,16 @@
 }
 @media only screen and (min-width: 820px) and (max-width: 1000px){
     #lowerFooterElementText{
+        margin-top: 20px;
         width: 95%;
         display: flex;
         justify-content: space-around;
     }
     #lowerFooterElementIcon{
+        margin: auto;
+        margin-top: 20px;
         display: flex;
+        gap: 10px;
         width: 20%;
         justify-content: space-around;
     }
@@ -97,8 +152,12 @@
     #footerItems{
         display: block;
     }
+    #lowerFooter{
+        width: 90%;
+        margin: auto;
+    }
     #footer{
-        height: 700px;
+        height: 800px;
     }
     #footerElements{
         justify-content: space-around;
@@ -113,20 +172,26 @@
         width: 25%;
     }
     #lowerFooterElementText{
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
     }
     #lowerFooterElementIcon{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 10px;
     }
 }
 @media only screen and (max-width: 410px){
     #footerItems>div:nth-child(1){
         margin-bottom: 50px;
     }
+    #lowerFooter{
+        width: 90%;
+        margin: auto;
+    }
     #footer{
-        height: 1550px;
+        height: 1430px;
         padding-top: 50px;
     }
     #footerItems{
@@ -137,7 +202,11 @@
         text-align: center;
     }
     #lowerFooterElementText{
+        margin-top: 20px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     #footerItems{
         padding-bottom: 10px;
@@ -147,5 +216,15 @@
     }
     .logoFooter>img{
         width: 50px;
+    }
+    #lowerFooterElementIcon{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #footerLogo>img{
+        width: 50%;
+        display: flex;
+        margin: auto;
     }
 }
