@@ -72,6 +72,13 @@
 .logoFooter>img:hover{
     width: 40px;
 }
+#lowerFooterElementText>div{
+    opacity: 0.6;
+    font-size: 14px;
+}
+#govPage{
+    cursor: pointer;
+}
 @media only screen and (min-width: 1793px){
     #lowerFooteron{
         display: flex;
