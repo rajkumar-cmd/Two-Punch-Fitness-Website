@@ -1,3 +1,9 @@
+import { navbar }from "./components/navbar.js"
+
+document.getElementById("navbar").innerHTML=navbar()
+
+
+
 let workouts_tab = document.getElementById("workouts")
 let programs_tab = document.getElementById("programs")
 let healthy_living_tab = document.getElementById("healthy_living")
@@ -12,9 +18,9 @@ let on_community = document.getElementById("community_inner_pages")
 let on_about = document.getElementById("about_inner_pages")
 
 
+
+
 import { onmouseover } from "./scripts/onmouseover.js"
-
-
 
 onmouseover(workouts_tab,on_workout,on_program,on_healthy,on_about,on_community)
 onmouseover(programs_tab,on_program,on_workout,on_healthy,on_about,on_community)
