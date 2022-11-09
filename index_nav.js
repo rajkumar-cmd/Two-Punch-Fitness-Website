@@ -1,6 +1,6 @@
 import { navbar }from "./components/navbar.js"
 
-document.getElementById("navbar").innerHTML=navbar()
+// document.getElementById("navbar").innerHTML=navbar()
 
 
 
@@ -9,6 +9,7 @@ let programs_tab = document.getElementById("programs")
 let healthy_living_tab = document.getElementById("healthy_living")
 let community_tab = document.getElementById("community")
 let about_tab = document.getElementById("about")
+
 
 
 let on_workout = document.getElementById("workout_inner_pages")
@@ -27,3 +28,34 @@ onmouseover(programs_tab,on_program,on_workout,on_healthy,on_about,on_community)
 onmouseover(healthy_living_tab,on_healthy,on_program,on_workout,on_about,on_community)
 onmouseover(community_tab,on_community,on_healthy,on_program,on_workout,on_about)
 onmouseover(about_tab,on_about,on_community,on_healthy,on_program,on_workout)
+
+// hamburger
+
+let ham=document.getElementById("ham")
+let cancel = document.getElementById("cancel")
+
+ham.onclick=()=>{
+  document.getElementById("sidebar").style.display="block"
+  ham.style.display="none"
+  cancel.style.display="block"
+  
+  
+}
+
+cancel.onclick=()=>{
+  document.getElementById("sidebar").style.display="none"
+  cancel.style.display="none"
+  ham.style.display="block"
+
+
+}
+
+
+// work_inner_page
+
+//     display: inline-block;
+// position: absolute;
+// top: 4.5rem;
+// right: 21rem;
+// width: 100vw;
+// left: 0rem;

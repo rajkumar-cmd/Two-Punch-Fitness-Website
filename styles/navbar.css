@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #nav_container {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 0 5rem 0 5rem;
+    /* padding: 2rem; */
+  }
+
+  #brand {
+    /* border: 1px solid green; */
+    width: 10%;
+  }
+
+  #brand > a > img {
+    width: 100%;
+  }
+  #menu_main {
+    width: 70%;
+    display: flex;
+    /* border:  1px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  #menu_main a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  #membership a,
+  .bl {
+    color: rgb(38, 127, 205);
+  }
+
+  #workout_inner_pages,#program_inner_pages,#healthy_living_inner_pages,#about_inner_pages,#community_inner_pages {
+    display: none;
+    z-index: 4;
+    /* display: inline-block; */
+    position: absolute;
+    top: 9rem;
+    right: 21rem;
+    width: 100vw;
+    left: 0rem;
+  }
+
+ 
+  #login {
+    /* border: 1px solid black; */
+    width: 60%;
+    display: none;
+  }
+  #menu_controls {
+    width: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #workout_info,
+  #custom,
+  #workout_programs,
+  #meal_plans {
+    width: 5%;
+    text-align: center;
+    /* min-height: 6rem; */
+    border: 1px solid green;
+    min-height: 8rem;
+
+    /* align-items: center; */
+  }
+  #workout_info:hover,
+  #custom:hover {
+    background-color: rgb(50, 50, 50);
+  }
+  .inner_img img {
+    width: 100%;
+    color: white;
+  }
+
+  #workouts:hover,
+  #programs:hover,
+  #healthy_living:hover,
+  #community:hover,
+  #about:hover,
+  #store:hover,
+  #membership:hover {
+    border-bottom: 0.2rem solid rgb(55, 136, 198);
+    padding-bottom: 0.5rem;
+  }
+
+  .inner_page {
+    width: 100%;
+    height: 150px;
+    background-color: #4e5262;
+    color: white;
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workout_info {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fitness {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .logo_name_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 150px;
+    /* background-color: 1px solid rgb(240, 9, 9); */
+    border-left: 1px solid rgba(36, 35, 35, 0.388);
+    border-right: 1px solid rgba(36, 35, 35, 0.162);
+    position: relative;
+  }
+
+  .logo_name_container:hover{
+    background-color: #0808083f;
+    cursor: pointer;
+  }
+
+  .logo {
+    filter: brightness(0) invert(1);
+    height: 40px;
+    width: 35px;
+  }
+  .logoName {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform:uppercase;
+  }
+  #navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+
+  #sidebar {
+    display: inline-block;
+    /* justify-content: left; */
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: #212432;
+    font-size: 2rem;
+    width: 20%;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* opacity: 0.4; */
+    display: none;
+  }
+  #sidebar a{
+    text-decoration: none;
+    font-size: 1.9rem;
+    
+  }
+  
+  #ham{
+
+    margin-left: 2rem;
+    margin-top: -5%;
+  }
+  #ham i {
+    height: 0.5rem;
+    width: 1rem;
+  }
+  #cancel i {
+    height: 0.5rem;
+   
+    width: 1rem;
+}
+#cancel{
+      display: none;
+
+  }
+  #cont {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .inner_page_side{
+    display: grid;
+    margin: 2rem 0 2rem 2rem;
+  }
+  .inner_page_side >span >a{
+    color: #fff;
+    opacity: 1;
+  }
+  .inner_page_side:hover .items_div{
+    display: grid;
+    gap: 1rem;
+  }
+  .items_div {
+    display: none;
+    /* flex-wrap: wrap; */
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    /* color: azure; */
+  }
+  .items_div a{
+    color:#9a9ca1;
+  }
+
+
+  @media only screen and (max-width: 1058px){
+    
+    #menu_main {
+        
+        display: none;
+        
+    }
+}
+  @media only screen and (max-width: 1123px) and (min-width:599px){
+    
+    #sidebar {
+        width: 30%;
+    }
+}
+  @media only screen and (max-width: 914px) and (min-width:412px){
+    #sidebar {
+        width: 100%;
+    }
+    #brand > a > img {
+        min-height: 5rem;
+        width: 5rem;
+    }
+    #menu_controls {
+        width: 45%;
+        
+        justify-content: space-between;
+        
+    }
+    
+}
+  @media only screen and (max-width: 1058px){
+    
+    #menu_main {
+        
+        display: none;
+        
+    }
+}
