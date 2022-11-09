@@ -59,11 +59,13 @@ export const navbar = ()=>{
     <!-- page-2 -->
      <div id="program_inner_pages">
       <div class="inner_page" >
-      <div id="workout_programs" class = "inner_img" ><img src="http://cdn.onlinewebfonts.com/svg/img_464400.png" alt="">workout_info  </div>
-      <div id="meal_plans" class = "inner_img" ><img src="https://static.thenounproject.com/png/668842-200.png" alt="">custom</div>
+      <div id="workout_programs" class = "inner_img" ><img src="http://cdn.onlinewebfonts.com/svg/img_464400.png" alt="">workout programs  </div>
+      <div id="meal_plans" class = "inner_img" ><img src="https://static.thenounproject.com/png/668842-200.png" alt="">meal plans</div>
+      <div id="meal_plans" class = "inner_img" ><img src="https://static.thenounproject.com/png/668842-200.png" alt="">meal plans</div>
+      <div id="meal_plans" class = "inner_img" ><img src="https://static.thenounproject.com/png/668842-200.png" alt="">meal plans</div>
    
       
-        inside program
+        
       </div>
     </div> 
 
@@ -72,6 +74,7 @@ export const navbar = ()=>{
       <div class="inner_page" >
         inside healthy_living
       </div>
+     
     </div> 
 
     <!-- page-4 -->
