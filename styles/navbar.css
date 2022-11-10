@@ -9,8 +9,10 @@
 
     align-items: center;
     /* border: 1px solid black; */
-    margin: 0 5rem 0 5rem;
+    padding: 0 5rem 0 5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     /* padding: 2rem; */
+    width: 100%;
   }
 
   #brand {
@@ -44,10 +46,11 @@
     z-index: 4;
     /* display: inline-block; */
     position: absolute;
-    top: 9rem;
+    top: 10.8rem;
     right: 21rem;
     width: 100vw;
     left: 0rem;
+    /* margin-top: 0.8rem; */
   }
 
  
@@ -154,9 +157,23 @@
     position: sticky;
     top: 0;
     left: 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
   }
 
+  #search_mid{
+    display: block;
+  }
+  #search{
+    margin-top: -1.1rem;
+    margin-left: 9rem;
+  }
+  #search_mid input{
+    border: none;
+    /* outline: none; */
+    border-bottom: 0.1rem solid rgb(46, 46, 46);
+    padding: 0.5rem;
+  }
+ 
 
   #sidebar {
     display: inline-block;
@@ -166,6 +183,7 @@
     background-color: #212432;
     font-size: 2rem;
     width: 20%;
+    
     height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* opacity: 0.4; */
@@ -183,6 +201,7 @@
     margin-left: 2rem;
     margin-top: -5%;
     z-index: 100;
+    display: block;
   }
   #ham i {
     height: 0.5rem;
@@ -196,6 +215,9 @@
 #cancel{
     display: none;
     z-index: 100;
+    color: #fff;
+    margin-left: -3.5rem;
+    margin-top: 1rem;
 
   }
   #cont {
@@ -234,6 +256,22 @@
         display: none;
         
     }
+    #search_mid{
+      display: block;
+    }
+    #search_mid input{
+      display: block;
+      width: 20rem;
+    }
+    #search {
+      margin-top: -1.4rem;
+      margin-left: 18rem;
+  }
+    #menu_controls {
+      width: 30%;
+      
+  }
+    
 }
   @media only screen and (max-width: 1124px) and (min-width:599px){
     
@@ -241,9 +279,18 @@
         width: 30%;
     }
     #ham {
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: -4rem;
     }
+    #menu_controls {
+      width: 30%;
+    
+  }
+  #search {
+    margin-top: -1.4rem;
+    margin-left: 18rem;
+}
+    
 }
   @media only screen and (max-width: 914px) and (min-width:412px){
     #sidebar {
@@ -260,10 +307,21 @@
         
     }
     #ham {
-        margin-left: 2rem;
+        margin-left: 1rem;
         margin-top: -3rem;
     }
+   
+    #menu_controls {
+      width: 62%;
+      
+  }
+  #nav_container {
     
+    padding: 0 2rem 0 2rem;
+   
+    
+}
+
 }
 
 
@@ -283,11 +341,19 @@
     }    
 }
 
-  @media only screen and (max-width: 1058px){
+  @media only screen and (max-width: 599px){
     
-    #menu_main {
-        
-        display: none;
-        
+    #search_mid input{
+      display: block;
+      width: 10rem;
     }
+    #menu_controls {
+      width: 32%;
+      
+  }
+  #search {
+    margin-top: -1.4rem;
+    margin-left: 9rem;
+}
+    
 }
