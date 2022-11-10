@@ -27,7 +27,7 @@
 }
 #footer{
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
     padding-top: 80px;
     font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: white;
@@ -88,7 +88,7 @@
         width: 200px;
     }
     #footer{
-        height: 500px;
+        /* height: 500px; */
     }
     #lowerFooterElementText{
         margin-top: 20px;
@@ -164,7 +164,7 @@
         margin: auto;
     }
     #footer{
-        height: 800px;
+        /* height: 800px; */
     }
     #footerElements{
         justify-content: space-around;
@@ -198,7 +198,7 @@
         margin: auto;
     }
     #footer{
-        height: 1430px;
+        /* height: 1430px; */
         padding-top: 50px;
     }
     #footerItems{

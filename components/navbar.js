@@ -2,7 +2,7 @@ export const navbar = ()=>{
     return `
     <div id="nav_container">
     <div id="brand">
-      <a href="./index.html"><img src="./img/website logo.png" alt="" /></a>
+      <a href="./home.html"><img src="./img/website logo.png" alt="" /></a>
     </div>
     <div id="menu_main">
       <div id="workouts">

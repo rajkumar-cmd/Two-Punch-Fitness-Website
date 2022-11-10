@@ -1,4 +1,4 @@
-import { navbar }from "./components/navbar.js"
+import { navbar }from "../Components/navbar.js"
 
 document.getElementById("navbar").innerHTML=navbar()
 
@@ -21,7 +21,7 @@ let on_about = document.getElementById("about_inner_pages")
 
 
 
-import { onmouseover } from "./scripts/onmouseover.js"
+import { onmouseover } from "./onmouseover.js"
 
 onmouseover(workouts_tab,on_workout,on_program,on_healthy,on_about,on_community)
 onmouseover(programs_tab,on_program,on_workout,on_healthy,on_about,on_community)
