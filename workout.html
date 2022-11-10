@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/workout.css">
+</head>
+<body>
+    <div id="container">
+        <div id="heading">
+          <div class="wb-cont">
+            <div class="wp-div">
+              <h2>Workout Programs</h2>
+            </div>
+          </div>
+
+          <div class="fs-cont">
+            <div id="filter-search">
+              <button class="filter_btn">
+                <span><i class="fa-solid fa-filter"></i></span> Filters
+              </button>
+              <button class="search_btn">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span> Search
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="filter-search-content">
+          <div id="filter-menu">
+            <div>
+              <div class="col-1">
+                <div id="range_holder">
+                  <div class="filter_criteria">
+                    <div class="filter_header">
+                      <h1>Duration</h1>
+                    </div>
+                    <div class="filter_set">
+                      <div class="range">
+                        <span class="range-label">Minutes</span>
+                        <input
+                          placeholder="Min"
+                          type="number"
+                          min="0"
+                          max="100"
+                          name="minlength"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
+                          class="max-4"
+                        />
+                        <span>–</span>
+                        <input
+                          placeholder="Max"
+                          type="number"
+                          min="0"
+                          max="100"
+                          name="maxlength"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
+                          class="max-4"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_criteria">
+                    <div class="filter_header">
+                      <h1>Calorie Burn</h1>
+                    </div>
+                    <div class="filter_set">
+                      <div class="range">
+                        <span class="range-label">Calories</span>
+                        <input
+                          placeholder="Min"
+                          type="number"
+                          min="0"
+                          max="1500"
+                          name="minburn"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
+                          class="max-4"
+                        />
+                        <span>–</span>
+                        <input
+                          placeholder="Max"
+                          type="number"
+                          min="0"
+                          max="1500"
+                          name="maxburn"
+                          inputmode="numeric"
+                          pattern="[0-9]*"
+                          class="max-4"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="filter_sub_row">
+                  <div class="filter_criteria">
+                    <div class="filter_header">
+                      <h1>Membership</h1>
+                    </div>
+                    <div class="filter_set">
+                      <ul class="checkbox_set">
+                        <li>
+                          <input type="checkbox" />
+                          <label for="">
+                            <div><span>Free</span>(644)</div>
+                          </label>
+                        </li>
+
+                        <li>
+                          <input type="checkbox" />
+                          <label for="">
+                            <div><span>Plus</span>(325)</div>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="filter_criteria">
+                    <div class="filter_header">
+                      <h1>Difficulty</h1>
+                    </div>
+                    <div class="filter_set">
+                      <ul class="checkbox_set">
+                        <li>
+                          <input type="checkbox" />
+                          <label
+                            ><div>
+                              <span>1</span>&nbsp;<span class="facet"
+                                >(644)</span
+                              >
+                            </div></label
+                          >
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label
+                            ><div>
+                              <span>2</span>&nbsp;<span class="facet"
+                                >(644)</span
+                              >
+                            </div></label
+                          >
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label
+                            ><div>
+                              <span>3</span>&nbsp;<span class="facet"
+                                >(644)</span
+                              >
+                            </div></label
+                          >
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label
+                            ><div>
+                              <span>4</span>&nbsp;<span class="facet"
+                                >(644)</span
+                              >
+                            </div></label
+                          >
+                        </li>
+                        <li>
+                          <input type="checkbox" />
+                          <label
+                            ><div>
+                              <span>5</span>&nbsp;<span class="facet"
+                                >(644)</span
+                              >
+                            </div></label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="search-menu">
+            <div class="search-menu-div">
+              <div>
+                <input
+                  class="sm-input"
+                  type="text"
+                  placeholder="Keyword Search"
+                />
+                <i class="fa-solid fa-magnifying-glass search-svg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+<script src="./scripts/workout.js"></script>
+</html>
