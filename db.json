@@ -279,16 +279,6 @@
       "time": 6,
       "difficulty": 1,
       "price": 67
-    },
-    {
-      "id": "29",
-      "img": "https://d18zdz9g6n5za7.cloudfront.net/video/800/800-1113-back-to-basics-strength-b587.jpg",
-      "name": "Back to Basics Strength",
-      "description": "Fundamental exercises for the upper and lower body",
-      "equipment": "Bench, Dumbbell, Mat",
-      "time": 35,
-      "difficulty": 3,
-      "price": 32
     }
   ],
   "recipes": [

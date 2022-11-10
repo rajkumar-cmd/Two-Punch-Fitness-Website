@@ -9,13 +9,13 @@
 #buyButton{
     cursor: pointer;
 }
-#component{
+#components{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 40px;
 }
-#component>div{
+#components>div{
     max-width: 1400px;
     height: 100%;
     margin: auto;
@@ -52,20 +52,20 @@
     justify-content: center;
     gap: 10px;
 }
-#component>div>#mainImg>img{
+#components>div>#mainImg>img{
     width: 100%;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
-#component>div>#mainImg{
+#components>div>#mainImg{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     transform: rotateY(0);
     /* transition:all 0.5s ease-in-out 0s */
 }
-#component>div:hover #mainImg{
+#components>div:hover #mainImg{
     transform: rotateY(-90deg);
 }
-#component>div>#divText{
+#components>div>#divText{
     width: 100%;
     height:max-content;
     position: absolute;
@@ -81,16 +81,16 @@
     transform: rotateY(90deg);
     transition: all 0.5s ease-in-out 0s;
 }
-#component>div:hover>#divText{
+#components>div:hover>#divText{
     transform: rotateY(0);
 }
-#button{
+#buttons{
     display: flex;
     justify-content: center;
     margin: 20px;
     gap: 20px;
 }
-#button>div{
+#buttons>div{
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     padding:25px;
@@ -98,32 +98,32 @@
     border-radius:100px;
     cursor: pointer;
 }
-#button>div:hover{
+#buttons>div:hover{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-#button>div:active{
+#buttons>div:active{
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 @media only screen and (min-width: 1080px) and (max-width: 1350px){
     #append{
         width: 90%;
     }
-    #component{
+    #components{
         gap: 20px;
         grid-template-columns: repeat(3,1fr);
     }
-    #component>div>#mainImg{
+    #components>div>#mainImg{
         transform: none;
     }
-    #component>div:hover #mainImg{
+    #components>div:hover #mainImg{
         transform: none;
     }
-    #component>div>#divText{
+    #components>div>#divText{
         position:relative;
         padding: 0;
         transform: none;
     }
-    #component>div:hover>#divText{
+    #components>div:hover>#divText{
         transform: none;
     }
     #name{
@@ -143,22 +143,22 @@
     #append{
         width: 90%;
     }
-    #component{
+    #components{
         gap: 20px;
         grid-template-columns: repeat(2,1fr);
     }
-    #component>div>#mainImg{
+    #components>div>#mainImg{
         transform: none;
     }
-    #component>div:hover #mainImg{
+    #components>div:hover #mainImg{
         transform: none;
     }
-    #component>div>#divText{
+    #components>div>#divText{
         position:relative;
         padding: 0;
         transform: none;
     }
-    #component>div:hover>#divText{
+    #components>div:hover>#divText{
         transform: none;
     }
     #name{
@@ -178,22 +178,22 @@
     #append{
         width: 90%;
     }
-    #component{
+    #components{
         gap: 20px;
         grid-template-columns: repeat(1,1fr);
     }
-    #component>div>#mainImg{
+    #components>div>#mainImg{
         transform: none;
     }
-    #component>div:hover #mainImg{
+    #components>div:hover #mainImg{
         transform: none;
     }
-    #component>div>#divText{
+    #components>div>#divText{
         position:relative;
         padding: 0;
         transform: none;
     }
-    #component>div:hover>#divText{
+    #components>div:hover>#divText{
         transform: none;
     }
     #name{

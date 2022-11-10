@@ -83,11 +83,11 @@ const appendWorkoutData=async(data,components)=>{
 const getPageData=async(clickedBtn,limit)=>{
     let res=await fetch(`http://localhost:3000/workoutVideos?_page=${clickedBtn}&_limit=${limit}`);
     let data=await res.json();
-    let components=document.getElementById("component");
+    let components=document.getElementById("components");
     appendWorkoutData(data,components);
 }
 getPageData(1,12);
-let buttonDiv=document.getElementById("button");
+let buttonDiv=document.getElementById("buttons");
 const createButtons=(data,itemsPerPage)=>{
     const buttons=Math.ceil(data/itemsPerPage);
     for(let i=1;i<=buttons;i++){
