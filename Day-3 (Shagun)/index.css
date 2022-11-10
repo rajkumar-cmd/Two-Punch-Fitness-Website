@@ -13,11 +13,7 @@
   display: none;
 }
 #heading {
-  /* max-width: 1400px; */
-  /* border: 1px solid red; */
   margin: auto;
-  /* padding-right: 3rem;
-  padding-left: 3rem; */
 }
 
 .gift-card {
@@ -31,16 +27,14 @@
   align-items: center;
   cursor: pointer;
 }
-.gift-card:hover{
-    cursor: pointer;
+.gift-card:hover {
+  cursor: pointer;
   border-color: #4296cb;
   transition: 1s;
-
 }
 #content {
   /* border: 2px solid red; */
   display: flex;
-  /* padding: 10px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -49,7 +43,6 @@
   max-width: 1400px;
   padding-right: 4px;
   padding-left: 4px;
-  /* display: flex; */
   flex-wrap: wrap;
   margin: 0px auto;
   -webkit-box-align: stretch;
@@ -93,15 +86,11 @@
   border: 3px solid white;
   width: 340px;
   height: 440px;
-  /* -webkit-box-flex: 0; */
-  /* flex: 0 0 auto; */
 }
 .card:hover {
   cursor: pointer;
   border-color: #4296cb;
   transition: 1s;
- 
-  /* -webkit-box-flex: 1; */
 }
 .card-content-1 {
   padding: 0px 30px;
@@ -141,7 +130,6 @@
   width: 130px;
   background-color: white;
   color: #3337a8;
-
 }
 .search_btn {
   border: 3px solid #4296cb;
@@ -150,11 +138,8 @@
   background-color: white;
   color: #3337a8;
   margin-left: -5px;
-  
-  
 }
 #filter-search {
-  /* border: 1px solid #f0f4f6; */
   max-width: 1200px;
 }
 .search_btn:hover,
@@ -166,17 +151,14 @@
   max-width: 100%;
   /* border: 1px solid red; */
   margin: auto;
-  /* border: 1px solid #f0f4f6; */
 }
 .wp-div {
   max-width: 1400px;
   /* border: 1px solid blue; */
   margin: auto;
-  /* border: 1px solid #f0f4f6; */
 }
 .fs-cont {
   width: 100%;
-  /* border: 1px solid #f0f4f6; */
   max-width: 1400px;
   margin: auto;
 }
@@ -185,10 +167,9 @@
   width: 100%;
   background-color: #f0f4f6;
 }
-.sm-input{
+.sm-input {
   border: 3px solid #4296cb;
-  
 }
-.sm-input::placeholder{
+.sm-input::placeholder {
   color: rgb(7, 7, 170);
 }
