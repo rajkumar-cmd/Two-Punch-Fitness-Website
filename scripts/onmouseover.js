@@ -1,7 +1,11 @@
-export const onmouseover = (first,second,third,fourth,fifth,sixth) =>{
+export const onmouseover = (first,second,third,fourth,fifth,sixth,sev,egt) =>{
 
+    // mouse_in= false
     first.onmouseover = () => {
-        second.style.display = "block"
+        // mouse_in=true
+        second.style.display = "inline-block"
+
+        
         third.style.display = "none"
         fourth.style.display = "none"
         fifth.style.display = "none"
@@ -15,6 +19,8 @@ export const onmouseover = (first,second,third,fourth,fifth,sixth) =>{
         fourth.style.display = "none"
         fifth.style.display = "none"
         sixth.style.display = "none"
-    
+
+       
+    // mouse_in=false
     }
 }
