@@ -1,0 +1,19 @@
+{
+  "name": "concerned-toothpaste-1616",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajkumar-cmd/concerned-toothpaste-1616.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajkumar-cmd/concerned-toothpaste-1616/issues"
+  },
+  "homepage": "https://github.com/rajkumar-cmd/concerned-toothpaste-1616#readme"
+}
