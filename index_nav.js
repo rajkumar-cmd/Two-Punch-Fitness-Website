@@ -33,9 +33,10 @@ onmouseover(about_tab,on_about,on_community,on_healthy,on_program,on_workout)
 
 let ham=document.getElementById("ham")
 let cancel = document.getElementById("cancel")
+let sidebar=document.getElementById("sidebar")
 
 ham.onclick=()=>{
-  document.getElementById("sidebar").style.display="block"
+ sidebar.style.display="block"
   ham.style.display="none"
   cancel.style.display="block"
   
@@ -43,12 +44,13 @@ ham.onclick=()=>{
 }
 
 cancel.onclick=()=>{
-  document.getElementById("sidebar").style.display="none"
+ sidebar.style.display="none"
   cancel.style.display="none"
   ham.style.display="block"
 
 
 }
+
 
 
 // work_inner_page

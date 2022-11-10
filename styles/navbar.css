@@ -15,7 +15,7 @@
 
   #brand {
     /* border: 1px solid green; */
-    width: 10%;
+    width: 10%;padding: 0.7rem;
   }
 
   #brand > a > img {
@@ -103,8 +103,10 @@
     color: white;
     display: flex;
     gap: 7rem;
+    margin-top: -2rem;
     justify-content: center;
     align-items: center;
+    z-index: -1;
   }
 
   .workout_info {
@@ -152,6 +154,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
 
@@ -167,6 +170,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* opacity: 0.4; */
     display: none;
+    z-index: 10;
   }
   #sidebar a{
     text-decoration: none;
@@ -178,6 +182,7 @@
 
     margin-left: 2rem;
     margin-top: -5%;
+    z-index: 100;
   }
   #ham i {
     height: 0.5rem;
@@ -189,7 +194,8 @@
     width: 1rem;
 }
 #cancel{
-      display: none;
+    display: none;
+    z-index: 100;
 
   }
   #cont {
@@ -229,10 +235,14 @@
         
     }
 }
-  @media only screen and (max-width: 1123px) and (min-width:599px){
+  @media only screen and (max-width: 1124px) and (min-width:599px){
     
     #sidebar {
         width: 30%;
+    }
+    #ham {
+        margin-left: 2rem;
+        margin-top: -4rem;
     }
 }
   @media only screen and (max-width: 914px) and (min-width:412px){
@@ -249,8 +259,30 @@
         justify-content: space-between;
         
     }
+    #ham {
+        margin-left: 2rem;
+        margin-top: -3rem;
+    }
     
 }
+
+
+@media only screen and (max-width: 914px) and (min-width:539px){
+
+    #sidebar {
+        width: 50%;
+    }
+    #sidebar a {
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    .items_div {
+        
+        font-size: 1.2rem;
+        /* color: azure; */
+    }    
+}
+
   @media only screen and (max-width: 1058px){
     
     #menu_main {
