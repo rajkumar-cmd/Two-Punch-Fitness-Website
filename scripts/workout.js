@@ -2,6 +2,10 @@
 
 // document.getElementById("sidebar1").innerHTML = sidebar()
 
+import footer from "../Components/footer.js";
+
+document.getElementById("footer").innerHTML=footer();
+
 let filter_btn = document.querySelector(".filter_btn");
 let search_btn = document.querySelector(".search_btn");
 
