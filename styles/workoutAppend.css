@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#body{
+    display: flex;
+}
+#append{
+    margin: auto;
+    width: 80%;
+}
+#buyButton{
+    cursor: pointer;
+}
+#components{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+#components>div{
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    background-color:rgb(250,251,254);
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    perspective: 1000px;
+    position: relative;
+}
+#name{
+    font-size: large;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:rgb(250,251,254);
+}
+#buyButton{
+    margin: auto;
+    width: 50%;
+    font-size: large;
+        font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#buyButton:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+#buyButton:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+#divText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#components>div>#mainImg>img{
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+#components>div>#mainImg{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    transform: rotateY(0);
+    /* transition:all 0.5s ease-in-out 0s */
+}
+#components>div:hover #mainImg{
+    transform: rotateY(-90deg);
+}
+#components>div>#divText{
+    width: 100%;
+    height:max-content;
+    position: absolute;
+    font-size: large;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    background: rgb(250,251,254);
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+#components>div:hover>#divText{
+    transform: rotateY(0);
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 20px;
+}
+#buttons>div{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    padding:25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius:100px;
+    cursor: pointer;
+}
+#buttons>div:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#buttons>div:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+@media only screen and (min-width: 1080px) and (max-width: 1350px){
+    #append{
+        width: 90%;
+    }
+    #components{
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    #components>div>#mainImg{
+        transform: none;
+    }
+    #components>div:hover #mainImg{
+        transform: none;
+    }
+    #components>div>#divText{
+        position:relative;
+        padding: 0;
+        transform: none;
+    }
+    #components>div:hover>#divText{
+        transform: none;
+    }
+    #name{
+        font-size:larger;
+        font-weight: 600;
+        padding: 10px;
+    }
+    #buyButton{
+        font-size: large;
+        font-weight: 600;
+        width: 50%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1080px){
+    #append{
+        width: 90%;
+    }
+    #components{
+        gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #components>div>#mainImg{
+        transform: none;
+    }
+    #components>div:hover #mainImg{
+        transform: none;
+    }
+    #components>div>#divText{
+        position:relative;
+        padding: 0;
+        transform: none;
+    }
+    #components>div:hover>#divText{
+        transform: none;
+    }
+    #name{
+        font-size:larger;
+        font-weight: 600;
+        padding: 10px;
+    }
+    #buyButton{
+        font-size: large;
+        font-weight: 600;
+        width: 50%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 700px){
+    #append{
+        width: 90%;
+    }
+    #components{
+        gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #components>div>#mainImg{
+        transform: none;
+    }
+    #components>div:hover #mainImg{
+        transform: none;
+    }
+    #components>div>#divText{
+        position:relative;
+        padding: 0;
+        transform: none;
+    }
+    #components>div:hover>#divText{
+        transform: none;
+    }
+    #name{
+        font-size:larger;
+        font-weight: 600;
+        padding: 10px;
+    }
+    #buyButton{
+        font-size: large;
+        font-weight: 600;
+        width: 50%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+}

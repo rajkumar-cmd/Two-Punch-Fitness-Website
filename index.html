@@ -1,128 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
-    
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-     <link rel="stylesheet" href="./style/footer.css">
+<body>
 
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
 
-    <style>
-      #nav_container {
-        display: flex;
-        justify-content: space-between;
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
 
-        align-items: center;
-        /* border: 1px solid black; */
-        margin: 0 5rem 0 5rem;
-        /* padding: 2rem; */
-      }
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
 
-      #brand {
-        /* border: 1px solid green; */
-        width: 10%;
-      }
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
 
-      #brand > a > img {
-        width: 100%;
-      }
-      #menu_main {
-        width: 70%;
-        display: flex;
-        /* border:  1px solid red; */
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: 0.8rem;
-      }
-      #menu_main a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-      }
-     #membership a,
-      .bl {
-        color: rgb(38, 127, 205);
-      }
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
 
-      #workout_inner_pages {
-        display: none;
-        z-index: 4;
-      }
-      #login {
-        /* border: 1px solid black; */
-        width: 60%;
-      }
-      #menu_controls {
-        width: 20%;
-        /* border: 1px solid blue; */
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
+                </div>
+            </div>
 
-      .inner_page{
-        width: 100%; 
-        /* height: 200px;  */
-        background-color: rgb(45, 47, 46);
-        color: white;
-        display: flex;
-        gap: 2rem;
-        padding: 1rem;
-        justify-content: center;
-        align-items: center;
-        z-index: 3;
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
 
-      }
-      #workout_info,#custom,#workout_programs,#meal_plans{
-        width: 5%;
-        text-align: center;
-        /* min-height: 6rem; */
-        border: 1px solid green;
-        min-height: 8rem;
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
 
-        /* align-items: center; */
-        
-      }
-      #workout_info:hover,#custom:hover{
-        background-color: rgb(50, 50, 50);
-      }
-      .inner_img img{
-        width: 100%;
-        color: black;
-      }
-     
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
 
-      #workouts:hover,#programs:hover,#healthy_living:hover,#community:hover,#about:hover,#store:hover,#membership:hover{
-        border-bottom: 0.2rem solid rgb(55, 136, 198);
-        padding-bottom: 0.5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="navbar">
-      
+                    <div class="input-field button">
+                        <input type="button" value="Signup">
+                    </div>
+                </form>
 
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-   
-   
-    <div id="footer"></div>
 </body>
-<script type="module" src="./script/index.js"></script>
 
 </html>
+
+<script>
+    container= document.querySelector(".container")
+        signUp = document.querySelector(".signup-link"),
+        login = document.querySelector(".login-link");
+
+    // js code to appear signup and login form
+    signUp.addEventListener("click", () => {
+        container.classList.add("active");
+    });
+    login.addEventListener("click", () => {
+        container.classList.remove("active");
+    });
+
+</script>

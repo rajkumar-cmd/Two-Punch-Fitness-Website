@@ -1,7 +1,7 @@
 const footer=()=>{
     return `<div id="footerItems">
     <div>
-        <div id="footerLogo"><img src="./Logo/TwoPunch_Tranparent.png" alt=""></div>
+        <div id="footerLogo"><img src="./img/TwoPunch_Tranparent.png" alt=""></div>
     </div>
     <div id="footerElements">
         <div>
