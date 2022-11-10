@@ -1,0 +1,113 @@
+body {
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+}
+#one {
+  display: flex;
+  background: -webkit-linear-gradient(
+    320deg,
+    #cbe8ff 0%,
+    #e1ddfa 60%,
+    #ffedc9 100%
+  );
+  background: -o-linear-gradient(320deg, #cbe8ff 0%, #e1ddfa 60%, #ffedc9 100%);
+  background: linear-gradient(130deg, #cbe8ff 0%, #e1ddfa 60%, #ffedc9 100%);
+}
+#one h1 {
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 35px;
+}
+#one p {
+  margin-left: 30%;
+  /* margin-top: 20%; */
+  font-size: 20px;
+}
+#two {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+.two1 {
+  background: #edf8fc;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
+.two2 {
+  background: #f0f4f6;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+}
+.two1 h1 {
+  text-align: center;
+}
+.two1 p {
+  text-align: center;
+}
+.two1 button {
+  text-align: center;
+  background-color: red;
+  width: 30%;
+  height: 15%;
+  border-radius: 6px;
+  font-size: large;
+  /* font-weight: bold; */
+  background-color: #212432;
+  color: white;
+  letter-spacing: 0.5px;
+  /* background-color: red; */
+  /* margin-left: 30%; */
+  cursor: pointer;
+}
+.two2 {
+  text-align: center;
+}
+.two2 button {
+  text-align: center;
+  background-color: red;
+  width: 30%;
+  height: 15%;
+  border-radius: 6px;
+  font-size: large;
+  /* font-weight: bold; */
+  background-color: #212432;
+  color: white;
+  letter-spacing: 0.5px;
+  /* background-color: red; */
+  /* margin-left: 30%; */
+  cursor: pointer;
+}
+#three {
+  display: flex;
+  background: -webkit-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
+  background: -o-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
+  background: linear-gradient(130deg, #ece6f8 0%, #f9e7f6 100%);
+  margin-top: 10px;
+}
+#three h1 {
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 35px;
+}
+#three p {
+  margin-left: 30%;
+  /* margin-top: 20%; */
+  font-size: 20px;
+}
+#pass_btn {
+  width: 20%;
+  height: 12%;
+  border-radius: 6px;
+  font-size: large;
+  /* font-weight: bold; */
+  background-color: #212432;
+  color: white;
+  letter-spacing: 0.5px;
+  /* background-color: red; */
+  margin-left: 30%;
+  cursor: pointer;
+}

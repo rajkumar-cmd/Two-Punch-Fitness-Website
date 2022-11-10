@@ -1,0 +1,168 @@
+/* *body h1 {
+        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,"Lucida Grande", sans-serif;
+          font: 40px;
+      } */
+
+body {
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+}
+#one {
+  display: flex;
+  /* margin: auto; */
+  /* width: 100%; */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#3d97ce),
+    to(#12debb)
+  );
+  background: -webkit-linear-gradient(top left, #3d97ce 0%, #12debb 100%);
+  background: -o-linear-gradient(top left, #3d97ce 0%, #12debb 100%);
+  background: linear-gradient(to bottom right, #3d97ce 0%, #12debb 100%);
+  color: #fff;
+}
+
+#join_now {
+  width: 20%;
+  height: 8%;
+  border-radius: 6px;
+  font-size: large;
+  /* font-weight: bold; */
+  background-color: #212432;
+  color: white;
+  letter-spacing: 0.5px;
+  /* background-color: red; */
+  margin-left: 30%;
+  cursor: pointer;
+}
+#one div h1 {
+  /* background-color: red; */
+  margin-left: 30%;
+  margin-top: 20%;
+  font-size: 35px;
+}
+#one div p {
+  /* background-color: red; */
+  margin-left: 30%;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  /* margin-top: 20%; */
+}
+#two {
+  background: -webkit-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
+  background: -o-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
+  background: linear-gradient(130deg, #ece6f8 0%, #f9e7f6 100%);
+  width: 98%;
+  margin: auto;
+}
+#two div h1 {
+  /* background-color: red; */
+  text-align: center;
+  padding-top: 50px;
+}
+#two div p {
+  /* background-color: red; */
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  /* font-weight: lighter; */
+}
+#buy_btn {
+  background-color: red;
+  width: 10%;
+  height: 50px;
+  border-radius: 6px;
+  font-size: large;
+  /* font-weight: bold; */
+  background-color: #212432;
+  color: white;
+  letter-spacing: 0.5px;
+  /* background-color: red; */
+  margin-left: 44%;
+  cursor: pointer;
+  margin-top: 15px;
+  position: absolute;
+}
+#two div img {
+  /* background-color: red; */
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#three {
+  display: flex;
+  /* margin-top: 10px; */
+  margin: auto;
+}
+#three div h1 {
+  text-align: center;
+}
+#three div p {
+  text-align: center;
+}
+.three1 {
+  background: #f0f4f6;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: 20px;
+}
+.three2 {
+  background: #f9fcfd;
+  /* background-color: red; */
+  margin: auto;
+  margin-top: 20px;
+}
+#browse {
+  color: #3d97ce;
+  cursor: pointer;
+}
+#browse :hover ::after {
+  text-decoration: underline;
+}
+#four {
+  display: flex;
+  /* margin: auto; */
+}
+.four1 {
+  margin: auto;
+  background: #000000;
+  margin-top: 20px;
+}
+.four1 h1 {
+  color: white;
+}
+.four1 p {
+  color: white;
+}
+.four2 {
+  margin: auto;
+  background: #d8d9da;
+  margin-top: 20px;
+}
+#four div p {
+  text-align: center;
+}
+#four div h1 {
+  text-align: center;
+  /* color: white; */
+}
+#five {
+  background: #effbff;
+}
+#five img {
+  width: 100%;
+}
+#five h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+#five p {
+  text-align: center;
+}
+#member_btn {
+  color: #3d97ce;
+  cursor: pointer;
+}
