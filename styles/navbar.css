@@ -94,7 +94,7 @@
   #community:hover,
   #about:hover,
   #store:hover,
-  #membership:hover {
+  #membership:hover,#cart:hover {
     border-bottom: 0.2rem solid rgb(55, 136, 198);
     padding-bottom: 0.5rem;
   }
@@ -164,7 +164,7 @@
     display: block;
   }
   #search{
-    margin-top: -1.1rem;
+    margin-top: -1.4rem;
     margin-left: 9rem;
   }
   #search_mid input{
@@ -271,19 +271,23 @@
       width: 30%;
       
   }
+  #ham {
+    margin-left: 2rem;
+    margin-top: -4rem;
+}
     
 }
-  @media only screen and (max-width: 1124px) and (min-width:599px){
+  @media only screen and (max-width: 1058px) and (min-width:599px){
     
     #sidebar {
         width: 30%;
     }
     #ham {
-        margin-left: 1rem;
-        margin-top: -4rem;
+        margin-left: 2rem;
+        margin-top: -3rem;
     }
     #menu_controls {
-      width: 30%;
+      width: 20%;
     
   }
   #search {
@@ -308,7 +312,7 @@
     }
     #ham {
         margin-left: 1rem;
-        margin-top: -3rem;
+        margin-top: -4rem;
     }
    
     #menu_controls {

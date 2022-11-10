@@ -255,18 +255,21 @@ export const navbar = ()=>{
       <div id="membership"><a href="">MEMBERSHIP</a></div>
     </div>
     <div id="menu_controls">
-      <div id="login">
-        <div>
-          <span class="bl"> Hi! Sign In </span>
-        </div>
-        <div>
-          <span> MY FITNESS <i class="fa-solid fa-caret-down"></i></span>
-        </div>
-      </div>
-      <div>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div>
+          <div id="login">
+            <div>
+              <span class="bl"> Hi! Sign In </span>
+            </div>
+            <div>
+              <span> MY FITNESS <i class="fa-solid fa-caret-down"></i></span>
+            </div>
+          </div>
+          <div id="search_mid">
+            <input  type="text" placeholder="Search here">
+            <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          
+          </div>
+      <div id="cart">
         <i class="fa-solid fa-bag-shopping"></i>
       </div>
     </div>
