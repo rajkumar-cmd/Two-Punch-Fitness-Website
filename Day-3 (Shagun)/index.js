@@ -21,6 +21,8 @@ search_btn.onclick = () => {
 
 let content_div = document.querySelector("#content");
 
+
+
 let fetchData = async () => {
   try {
     let res = await fetch(`http://localhost:3000/workout-programs`);
@@ -38,7 +40,7 @@ let appendindData = (el) => {
   let cards_container = document.querySelector("#content");
   cards_container.innerHTML += ` <div class="card">
     <div class="img-div">
-        <img src="${el.img}"
+        <img id="image" src="${el.img}"
             alt="">
     </div>
     <div class="card-content">
@@ -56,7 +58,7 @@ let appendindData = (el) => {
                     <p>$${el.prise}</p>
                 </div>
                 <div>
-                    <button class="card-btn">
+                    <button id="${el.img}" onclick="paymentPage(event)" class="${el.prise}">
                         ADD TO BAG
                     </button>
                 </div>
@@ -65,3 +67,15 @@ let appendindData = (el) => {
     </div>
 </div>`;
 };
+
+let paymentPage=(event) => {
+  obj={
+    img:event.target.id,
+    prise:event.target.className
+  }
+  
+  let data= JSON.parse(localStorage.getItem("obj")) || []
+  data.push(obj)
+  localStorage.setItem("obj",JSON.stringify(data))
+  window.location.href="./payment.html"
+}
