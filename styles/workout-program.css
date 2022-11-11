@@ -38,7 +38,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-
   position: relative;
   max-width: 1400px;
   padding-right: 4px;
