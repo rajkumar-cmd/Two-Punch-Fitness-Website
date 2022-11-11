@@ -27,15 +27,7 @@
               <div>Price</div>
             </div>
             <div id="js-append">
-              <!-- <div class="payment-cont">
-                                <div class="img-cont">
-                                    <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/130/130-9687-fb-just-your-body-2-week-no-equipment-challenge-b0df.jpg" alt="">
-                                    <p>FB PLUS PASS</p>
-                                    <p>15-Day Pass</p>
-                                </div>
-                                <div class="remove">Remove</div>
-                                <div>$7.99</div>
-                            </div> -->
+        
             </div>
             <div class="total">
               <div>Total</div>
@@ -43,7 +35,7 @@
             </div>
             <div class="button">
               <button class="continue-btn"> Continue Shopping</button>
-              <button>Proceed to Checkout</button>
+              <button class="proceed_to_pay">Proceed to Pay</button>
             </div>
           </div>
         </div>
@@ -53,29 +45,49 @@
 </body>
 
 </html>
-<script type="module">
+<script>
 
   let continue_btn = document.querySelector(".continue-btn")
   continue_btn.addEventListener("click", () => {
     window.location.href = "./workout-Program.html"
+  })
+  let proceed_to_pay_btn = document.querySelector(".proceed_to_pay")
+  proceed_to_pay_btn.addEventListener("click",()=>{
+    window.alert("Payment Successfull..!!!")
   })
 
   let fetchData = async () => {
     let LS_data = JSON.parse(localStorage.getItem("obj")) || [];
     let container = document.querySelector("#js-append");
     LS_data.forEach(function (el) {
-      container.innerHTML += `<div class="payment-cont">
-                                <div class="img-cont">
-                                    <img src="${el.img}" alt="">
-                                    <div> 
-                                    <p>FB PLUS PASS</p>
-                                    <p>15-Day Pass</p>
-                                    </div>
-                                    
-                                </div>
-                                <div id="${el.img}" onclick="remove(event)" class="remove">Remove</div>
-                                <div class ="prise-div">$${el.prise}</div>
-                            </div>`;
+      let cont_div = document.createElement("div")
+      cont_div.setAttribute("class", "cart_div")
+
+      let col_1 = document.createElement("div")
+      col_1.setAttribute("class", "col_1")
+      let img_div = document.createElement("div")
+      let img = document.createElement("img")
+      img.setAttribute("class", "image")
+      img.src = el.img
+      img_div.append(img)
+      img_content_div = document.createElement("div")
+      let p1 = document.createElement("p")
+      p1.innerText = "FB PLUS PASS"
+      let p2 = document.createElement("p")
+      p2.innerText = "15-Day Pass"
+      img_content_div.append(p1, p2)
+
+      let col_2 = document.createElement("div")
+      col_2.innerText = "Remove"
+
+      let col_3 = document.createElement("div")
+      col_3.innerText = `$${el.prise}`
+      col_1.append(img_div, img_content_div)
+      cont_div.append(col_1, col_2, col_3)
+      container.append(cont_div)
+
+
+
     });
 
 
