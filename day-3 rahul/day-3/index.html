@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="card"></div>
+    <!-- <button id="button">ADD TO BAG</button> -->
+  </body>
+</html>
+
+<script>
+  let fetchData = async () => {
+    try {
+      let res = await fetch(`http://localhost:3000/meals`);
+      let data = await res.json();
+      console.log(data);
+      data.forEach((el) => {
+        appendData(el);
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  fetchData();
+
+  let appendData = (el) => {
+    let div = document.createElement("div");
+
+    let card_container = document.getElementById("card");
+
+    let img = document.createElement("img");
+    img.id = "img";
+    img.src = el.img;
+
+    let title = document.createElement("p");
+    title.innerHTML = ` ${el.title}`;
+
+    let des = document.createElement("p");
+    des.innerHTML = ` ${el.des}`;
+
+    let price = document.createElement("p");
+    price.innerHTML = `${el.price}`;
+
+    let buttton = document.createElement("button");
+    // buttton.style.color="red"
+    buttton.innerHTML = "ADD TO BAG"; //`${el.buttton}`
+
+    div.append(img, title, des, price, buttton);
+    card_container.append(div);
+  };
+  appendData(data);
+</script>

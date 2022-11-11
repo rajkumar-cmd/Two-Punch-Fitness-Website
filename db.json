@@ -286,7 +286,7 @@
       "id": "1",
       "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1229-egg-and-sun-dried-tomato-stuffed-zucchini-a0db.jpg",
       "name": "Egg and Sun-Dried Tomato Stuffed Zucchini",
-      "description": "Mediterranean-Inspired Breakfast or Brunch",
+      "description": "Mediterranean-inspired breakfast or brunch",
       "dietaryType": "Vegetarian",
       "prepTime": 5,
       "cookTime": 15,
@@ -296,7 +296,7 @@
       "id": "2",
       "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1233-easy-salmon-patties-9197.jpg",
       "name": "Easy Salmon Patties",
-      "description": "With Tzatziki Sauce and Roasted Zucchini",
+      "description": "With tzatziki sauce and roasted zucchini",
       "dietaryType": "Omnivore",
       "prepTime": 10,
       "cookTime": 15,
@@ -306,7 +306,7 @@
       "id": "3",
       "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1232-one-pan-lemon-artichoke-chicken-9656.jpg",
       "name": "One-Pan Lemon Artichoke Chicken",
-      "description": "With Brown Rice and Kale",
+      "description": "With brown rice and kale",
       "dietaryType": "Omnivore",
       "prepTime": 3,
       "cookTime": 17,
@@ -316,7 +316,7 @@
       "id": "4",
       "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1226-chicken-berry-salad-aae9.jpg",
       "name": "Chicken Berry Salad",
-      "description": "With Lemon Pepper Dressing",
+      "description": "With lemon pepper dressing",
       "dietaryType": "Omnivore",
       "prepTime": 5,
       "cookTime": 15,
@@ -326,13 +326,114 @@
       "id": "5",
       "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1231-hummus-breakfast-bowl-83f9.jpg",
       "name": "Hummus Breakfast Bowl",
-      "description": "With Veggies, Feta, and a Fried Egg",
+      "description": "With veggies, feta, and a fried egg",
       "dietaryType": "Vegetarian",
       "prepTime": 5,
       "cookTime": 5,
       "price": 11
+    },
+    {
+      "id": "6",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1224-breakfast-fried-rice-aa9c.jpg",
+      "name": "Breakfast Fried Rice",
+      "description": "With eggs and veggies",
+      "dietaryType": "Vegetarian",
+      "prepTime": 5,
+      "cookTime": 13,
+      "price": 19
+    },
+    {
+      "id": "7",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1237-vegetarian-tex-mex-tacos-94c2.jpg",
+      "name": "Vegetarian Tex-Mex Tacos",
+      "description": "With roasted chickpeas and homemade BBQ sauce",
+      "dietaryType": "Vegetarian",
+      "prepTime": 3,
+      "cookTime": 15,
+      "price": 12
+    },
+    {
+      "id": "8",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1238-tomato-and-chickpea-soup-80bb.jpg",
+      "name": "Tomato and Chickpea Soup",
+      "description": "Healthy vegetarian lunch",
+      "dietaryType": "Vegetarian",
+      "prepTime": 2,
+      "cookTime": 12,
+      "price": 21
+    },
+    {
+      "id": "9",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1223-blueberry-and-kale-protein-smoothie-816a.jpg",
+      "name": "Blueberry and Kale Protein Smoothie",
+      "description": "With yogurt, nut butter, and honey",
+      "dietaryType": "Vegetarian",
+      "prepTime": 2,
+      "cookTime": 0,
+      "price": 9
+    },
+    {
+      "id": "10",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1225-salmon-broccoli-breakfast-wrap-9072.jpg",
+      "name": "Salmon Broccoli Breakfast Wrap",
+      "description": "With egg whites and cheddar cheese",
+      "dietaryType": "Omnivore",
+      "prepTime": 2,
+      "cookTime": 15,
+      "price": 21
+    },
+    {
+      "id": "11",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1070-lemon-basil-zucchini-8408.jpg",
+      "name": "Steamed Zucchini with Lemon and Basil",
+      "description": "Simple summer squash side dish",
+      "dietaryType": "Vegan",
+      "prepTime": 2,
+      "cookTime": 3,
+      "price": 17
+    },
+    {
+      "id": "12",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1053-broccoli-caesar-side-dish-8483.jpg",
+      "name": "Broccoli Caesar Side Dish",
+      "description": "With healthy homemade dressing",
+      "dietaryType": "Omnivore",
+      "prepTime": 2,
+      "cookTime": 3,
+      "price": 13
+    },
+    {
+      "id": "13",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1076-roasted-steakhouse-potatoes-9c4b.jpg",
+      "name": "Roasted Steakhouse Potatoes",
+      "description": "Seasoned with dijon and garlic",
+      "dietaryType": "Vegan",
+      "prepTime": 2,
+      "cookTime": 20,
+      "price": 24
+    },
+    {
+      "id": "14",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1069-italian-side-salad-aa4d.jpg",
+      "name": "Italian Side Salad",
+      "description": "With balsamic dressing and medi terranean herbs",
+      "dietaryType": "Vegan",
+      "prepTime": 5,
+      "cookTime": 0,
+      "price": 17
+    },
+    {
+      "id": "15",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-1154-tofu-pad-thai-with-mango-peanut-sauce-9b3b.jpg",
+      "name": "Tofu Pad Thai with Mango Peanut Sauce",
+      "description": "A vegan remix of the classic recipe",
+      "dietaryType": "Vegan",
+      "prepTime": 5,
+      "cookTime": 20,
+      "price": 34
     }
   ],
+
   "workout-programs": [
     {
       "id": 1,
@@ -525,6 +626,197 @@
       "minutes": 34,
       "difficulty": 3,
       "prise": 7.99
+
+  "wellnessVideos": [
+    {
+      "id": "1",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-62-guided-meditation-for-caregivers-a4f8.jpg",
+      "name": "Guided Meditation for Caregivers",
+      "description": "Mindfulness Practice for Self-Care",
+      "type": "Guided Meditation",
+      "time": 12,
+      "price": 78
+    },
+    {
+      "id": "2",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-63-mindfulness-meditation-to-enhance-motivation-a0fe.jpg",
+      "name": "Mindfulness Meditation to Enhance Motivation",
+      "description": "15-Minute Guided Practice to Boost Motivation",
+      "type": "Guided Meditation",
+      "time": 15,
+      "price": 84
+    },
+    {
+      "id": "3",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-37-control-your-breath-with-pursed-lip-breathing-99ce.jpg",
+      "name": "Control Your Breath With Pursed Lip Breathing",
+      "description": "Guided Breathing Technique",
+      "type": "Guided Meditation",
+      "time": 10,
+      "price": 55
+    },
+    {
+      "id": "4",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-61-30-minute-guided-walking-meditation-afbd.jpg",
+      "name": "30-Minute Guided Walking Meditation",
+      "description": "Mindfulness Practice With Movement",
+      "type": "Mindfulness",
+      "time": 30,
+      "price": 44
+    },
+    {
+      "id": "5",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-60-5-minute-mindfulness-work-break-847e.jpg",
+      "name": "5-Minute Mindfulness Work Break",
+      "description": "Quick Guided Meditation to Recenter",
+      "type": "Guided Meditation",
+      "time": 5,
+      "price": 11
+    },
+    {
+      "id": "6",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-43-meditation-to-manage-judgment-aa86.jpg",
+      "name": "Meditation to Manage Judgment",
+      "description": "Mindfulness Practice for Non-Judgmental Awareness",
+      "type": "Guided Meditation",
+      "time": 11,
+      "price": 21
+    },
+    {
+      "id": "7",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-59-meditation-for-self-compassion-bf2b.jpg",
+      "name": "Meditation for Self-Compassion",
+      "description": "Guided Practice for Positive Self-Talk",
+      "type": "Guided Meditation",
+      "time": 15,
+      "price": 32
+    },
+    {
+      "id": "8",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-28-mindfulness-practice-for-forgiveness-af83.jpg",
+      "name": "Mindfulness Practice for Forgiveness",
+      "description": "Release Negative Emotions",
+      "type": "Guided Meditation",
+      "time": 10,
+      "price": 23
+    },
+    {
+      "id": "9",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-41-guided-slow-breathing-practice-a5d1.jpg",
+      "name": "Guided Slow Breathing Practice",
+      "description": "Stress-Reducing Breathing Technique",
+      "type": "Guided Meditation",
+      "time": 15,
+      "price": 31
+    },
+    {
+      "id": "10",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-44-energizing-mindfulness-practice-8b10.jpg",
+      "name": "Energizing Mindfulness Practice",
+      "description": "Energy Boosting Guided Meditation",
+      "type": "Guided Meditation",
+      "time": 11,
+      "price": 27
+    },
+    {
+      "id": "11",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-36-pre-workout-guided-visualization-8990.jpg",
+      "name": "Pre-Workout Guided Visualization",
+      "description": "Enhance Athletic Performance with Motor Imagery",
+      "type": "Guided Meditation",
+      "time": 10,
+      "price": 29
+    },
+    {
+      "id": "12",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-33-guided-breathing-for-stress-relief-bf1f.jpg",
+      "name": "Guided Breathing for Stress Relief",
+      "description": "Nadi Shodhana Pranayama Technique",
+      "type": "Guided Meditation",
+      "time": 12,
+      "price": 26
+    },
+    {
+      "id": "13",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-34-meditation-to-improve-concentration-a08b.jpg",
+      "name": "Meditation to Improve Concentration",
+      "description": "Practice Focusing and Redirecting Your Attention",
+      "type": "Guided Meditation",
+      "time": 17,
+      "price": 31
+    },
+    {
+      "id": "14",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-26-visualization-for-emotional-healing-ba06.jpg",
+      "name": "Visualization for Emotional Healing",
+      "description": "Inner Child Guided Practice",
+      "type": "Guided Meditation",
+      "time": 13,
+      "price": 24
+    },
+    {
+      "id": "15",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-32-gratitude-meditation-9972.jpg",
+      "name": "Gratitude Meditation",
+      "description": "Guided Practice to Boost Appreciation",
+      "type": "Guided Meditation",
+      "time": 16,
+      "price": 45
+    },
+    {
+      "id": "16",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-35-guided-meditation-for-stillness-a9e0.jpg",
+      "name": "Guided Meditation for Stillness",
+      "description": "14-Minute Practice for Relaxation and Stress Reduction Through Stillness",
+      "type": "Guided Meditation",
+      "time": 14,
+      "price": 29
+    },
+    {
+      "id": "17",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-38-10-minute-guided-meditation-for-open-mindedness-and-flexibility-8323.jpg",
+      "name": "10-Minute Guided Meditation for Open Mindedness and Flexibility",
+      "description": "Improve your open mindedness to enhance your well-being and relationships",
+      "type": "Guided Meditation",
+      "time": 10,
+      "price": 37
+    },
+    {
+      "id": "18",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-42-post-workout-guided-meditation-for-mind-body-connection-9234.jpg",
+      "name": "10-Minute Post-Workout Guided Meditation for Mind-Body Connection",
+      "description": "Reduce cortisol levels and activate the parasympathetic nervous system in this mental cool-down",
+      "type": "Guided Meditation",
+      "time": 10,
+      "price": 34
+    },
+    {
+      "id": "19",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-20-who-what-where-when-why-and-how-for-meditation-a-beginners-guide-a1aa.jpg",
+      "name": "6-Minute Meditation for Beginners",
+      "description": "Learn the who, what, where, when, why, and how of mindfulness meditations",
+      "type": "Mindfulness, Guided Meditation",
+      "time": 6,
+      "price": 43
+    },
+    {
+      "id": "20",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-40-mind-vacation-visualization-a4b8.jpg",
+      "name": "Mind Vacation Visualization",
+      "description": "Guided Mindfulness Meditation for Relaxation",
+      "type": "Guided Meditation",
+      "time": 8,
+      "price": 36
+    },
+    {
+      "id": "21",
+      "img": "https://d18zdz9g6n5za7.cloudfront.net/wellness-videos/800/800-14-autogenic-training-b113.jpg",
+      "name": "How to Reduce Stress with Autogenic Training",
+      "description": "Achieve calmness with relaxation techniques and verbal commands",
+      "type": "Mental Wellness",
+      "time": 10,
+      "price": 43
+
     }
   ]
 }
