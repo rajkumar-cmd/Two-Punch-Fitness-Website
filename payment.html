@@ -55,7 +55,7 @@
 
 let continue_btn= document.querySelector(".continue-btn")
 continue_btn.addEventListener("click", ()=>{
-    window.location.href="./index.html"
+    window.location.href="./workout-Program.html"
 })
 
   let fetchData = async () => {
@@ -90,7 +90,7 @@ continue_btn.addEventListener("click", ()=>{
       }
     });
     localStorage.setItem("obj", JSON.stringify(updated_data));
-    
+    calculate()
   }
 
   function calculate(){

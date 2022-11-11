@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/workout-program.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <style>
         * {
             font-family: 'Lato', sans-serif;
@@ -53,8 +55,9 @@
 <script src="https://kit.fontawesome.com/b9c53404a3.js" crossorigin="anonymous"></script>
 
 <body>
-    <div id="navbar"></div>
+   
     <div id="container">
+        <div id="navbar"></div>
         <div id="heading">
             <div class="wb-cont">
                 <div class="wp-div">
@@ -257,9 +260,12 @@
                                 <p>$${el.prise}</p>
                             </div>
                             <div>
-                                <button id="${el.img}" onclick="paymentPage(event)" class="${el.prise}">
-                                    ADD TO BAG
-                                </button>
+                                <a href="./payment.html"> 
+                                    <button id="${el.img}" class="${el.prise}">
+                                        ADD TO BAG
+                                    </button>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -267,6 +273,7 @@
             </div> -->
         </div>
     </div>
+    <div id="footer"></div>
 </body>
 
 </html>

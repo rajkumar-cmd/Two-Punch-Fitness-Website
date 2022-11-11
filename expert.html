@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/expert.css" />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b9c53404a3.js" crossorigin="anonymous"></script>
     <style>
-        
         .redflame {
             margin-right: -12px;
 
@@ -28,7 +29,8 @@
             font-weight: 200;
             margin-left: 40px;
         }
-        .wp-div>p{
+
+        .wp-div>p {
             font-size: 20px;
         }
 
@@ -53,19 +55,21 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="heading">
-            <div class="wb-cont">
-                <div class="wp-div">
-                    <h2>Expert Articles</h2>
-                    <p>Healthy living content written by physical therapists, registered dietitians and doctors.</p>
+    <div>
+        <div id="container">
+            <div id="navbar"></div>
+            <div id="heading">
+                <div class="wb-cont">
+                    <div class="wp-div">
+                        <h2>Expert Articles</h2>
+                        <p>Healthy living content written by physical therapists, registered dietitians and doctors.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="content-div">
-        <div id="content">
-            <!-- <div class="card">
+        <div id="content-div">
+            <div id="content">
+                <!-- <div class="card">
                 <div class="img-div">
                     <img src="https://d18zdz9g6n5za7.cloudfront.net/blog/640/640-1241-behavioral-activation-why-exercise-can-improve-depression-b37b.jpg"
                         alt="">
@@ -81,9 +85,12 @@
                 </div>
             </div> -->
 
+            </div>
         </div>
     </div>
+    <div id="footer"></div>
 </body>
+
 </html>
 
-<script src="./scripts/expert.js"></script>
+<script type="module" src="./scripts/expert.js"></script>

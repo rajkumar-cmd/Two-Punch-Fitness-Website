@@ -1,5 +1,9 @@
-import {navbar} from "/Components/navbar"
+import {navbar} from "../Components/navbar.js"
+import footer from "../Components/footer.js";
+
+
 document.getElementById("navbar").innerHTML=navbar();
+document.getElementById("footer").innerHTML=footer();
 
 let filter_btn = document.querySelector(".filter_btn");
 let search_btn = document.querySelector(".search_btn");
@@ -61,15 +65,18 @@ let appendindData = (el) => {
                     <p>$${el.prise}</p>
                 </div>
                 <div>
-                    <button id="${el.img}" onclick="paymentPage(event)" class="${el.prise}">
-                        ADD TO BAG
-                    </button>
+                <a href="./payment.html"> 
+                <button id="${el.img}" class="${el.prise}">
+                    ADD TO BAG
+                </button>
+            </a>
                 </div>
             </div>
         </div>
     </div>
 </div>`;
 };
+
 
 let paymentPage=(event) => {
   obj={
@@ -80,5 +87,5 @@ let paymentPage=(event) => {
   let data= JSON.parse(localStorage.getItem("obj")) || []
   data.push(obj)
   localStorage.setItem("obj",JSON.stringify(data))
-  window.location.href="./payment.html"
+  window.location.href="/"
 }
