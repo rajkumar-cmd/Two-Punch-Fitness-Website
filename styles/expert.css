@@ -1,7 +1,6 @@
 .flex {
   display: flex;
 }
-
 #filter-menu {
   display: flex;
   /* border: 1px solid red; */
