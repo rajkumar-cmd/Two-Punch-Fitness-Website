@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/payment.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div id="cont-div">
-      <div class="container">
-        <div class="heading-div">
-          <div class="heading">
-            <h2>Shopping Bag</h2>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/payment.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="cont-div">
+    <div class="container">
+      <div class="heading-div">
+        <div class="heading">
+          <h2>Shopping Bag</h2>
         </div>
+      </div>
 
-        <div class="payment-container">
-          <div class="payment-table">
-            <div>
-              <div class="payment-heading">
-                <div>ITEM</div>
-                <div>Remove</div>
-                <div>Price</div>
-              </div>
-              <div id="js-append">
-                <!-- <div class="payment-cont">
+      <div class="payment-container">
+        <div class="payment-table">
+          <div>
+            <div class="payment-heading">
+              <div>ITEM</div>
+              <div>Remove</div>
+              <div>Price</div>
+            </div>
+            <div id="js-append">
+              <!-- <div class="payment-cont">
                                 <div class="img-cont">
                                     <img src="https://d18zdz9g6n5za7.cloudfront.net/plan/130/130-9687-fb-just-your-body-2-week-no-equipment-challenge-b0df.jpg" alt="">
                                     <p>FB PLUS PASS</p>
@@ -35,28 +36,29 @@
                                 <div class="remove">Remove</div>
                                 <div>$7.99</div>
                             </div> -->
-              </div>
-              <div class="total">
-                <div>Total</div>
-                <div class="total-res">$779</div>
-              </div>
-              <div class="button">
-                <button class="continue-btn"> Continue Shopping</button>
-                <button>Proceed to Checkout</button>
-              </div>
+            </div>
+            <div class="total">
+              <div>Total</div>
+              <div class="total-res">$779</div>
+            </div>
+            <div class="button">
+              <button class="continue-btn"> Continue Shopping</button>
+              <button>Proceed to Checkout</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-</html>
-<script>
+  </div>
+</body>
 
-let continue_btn= document.querySelector(".continue-btn")
-continue_btn.addEventListener("click", ()=>{
-    window.location.href="./workout-Program.html"
-})
+</html>
+<script type="module">
+
+  let continue_btn = document.querySelector(".continue-btn")
+  continue_btn.addEventListener("click", () => {
+    window.location.href = "./workout-Program.html"
+  })
 
   let fetchData = async () => {
     let LS_data = JSON.parse(localStorage.getItem("obj")) || [];
@@ -76,7 +78,7 @@ continue_btn.addEventListener("click", ()=>{
                             </div>`;
     });
 
-    
+
   };
   fetchData();
 
@@ -93,13 +95,13 @@ continue_btn.addEventListener("click", ()=>{
     calculate()
   }
 
-  function calculate(){
+  function calculate() {
     let data = JSON.parse(localStorage.getItem("obj")) || [];
-    let total = data.reduce((acc, el)=>{
-        return acc+=Number(el.prise)
-    },0)
-    
-    document.querySelector(".total-res").innerText=`$${total}`
+    let total = data.reduce((acc, el) => {
+      return acc += Number(el.prise)
+    }, 0)
+
+    document.querySelector(".total-res").innerText = `$${total}`
 
   }
   calculate()
