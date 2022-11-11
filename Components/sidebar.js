@@ -1,9 +1,7 @@
 export const sidebar = () => {
   return `
     <div id="sidebar">
-    <div id="cancel">
-    <i id="cancel_Op" class="fa-solid fa-xmark"></i>
-    </div>
+    
       <div class="inner_page_side">
         <span><a href="">workouts</a></span>
         <div class="items_div">
