@@ -38,6 +38,7 @@ const appendWorkoutData=async(data,components)=>{
     console.log(data);
     data.forEach((el)=> {
         let div=document.createElement("div");
+        div.setAttribute("id","cardRes");
 
         let divMain=document.createElement("div");
         divMain.setAttribute("id","mainImg");
