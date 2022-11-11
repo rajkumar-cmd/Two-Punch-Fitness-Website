@@ -71,7 +71,7 @@ let appendindData = (input) => {
     let price_btn_div=document.createElement("div")
     price_btn_div.setAttribute("class","prise_btn_div")
     let price_div=document.createElement("div")
-    price_div.innerText=`As Low As ${el.prise}`
+    price_div.innerText=`As Low As $${el.prise}`
     let btn= document.createElement("button")
     btn.setAttribute("class","add_to_cart_btn")
     btn.addEventListener("click", ()=>{

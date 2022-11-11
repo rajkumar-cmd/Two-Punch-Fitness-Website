@@ -38,29 +38,21 @@
     background: #F0F4F6;
     width: 100%;
     margin: auto;
-   
-    
-    
 }
 .payment-heading{
     display: flex;
     /* border: 1px solid red; */
     justify-content: space-around;
     height: 50px;
-    border: 1px transparent black;
     
 
-    
-    
 }
 .payment-heading > div{
     margin: auto;
     font-size: large;
     font-weight: 600;
 }
-#js-append{
-    
-}
+
 .payment-cont{
     display: flex;
     justify-content: space-around;
@@ -158,4 +150,29 @@
 .payment-table{
     max-width: 1400px;
     margin: auto;
+}
+.cart_div{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 10px;
+    align-items: center;
+   
+}
+.image{
+    margin-right: 10px;
+}
+.col_1{
+    display: flex;
+    margin-left: -130px;
+}
+.cart_div > div:nth-child(2){
+    margin-left: -100px;
+}
+.cart_div > *{
+    font-size: 17px;
+    font-weight: 600;
 }

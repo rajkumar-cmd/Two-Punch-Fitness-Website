@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: 1px solid black;
 }
 .gift-card:hover {
   cursor: pointer;
@@ -47,6 +48,7 @@
   -webkit-box-align: stretch;
   align-items: stretch;
   background-color: white;
+  
 }
 #filter-menu > div {
   margin: auto;
@@ -119,7 +121,9 @@
   margin: auto;
 }
 .gift-card-div {
-  height: 350px;
+  height: auto;
+  /* border: 1px solid black; */
+  width: auto;
 }
 .sm-input {
   border: 3px solid #4296cb;
@@ -132,13 +136,18 @@
   justify-content: space-between;
 }
 .cart_div {
-  border: 1px solid blue;
+  border: 1px solid black;
   height: 400px;
+}
+.cart_div:hover{
+  border: 1px solid #4296cb;
+  transition: 0.5s;
+
 }
 .cont_div {
   padding: 0px 20px;
   margin-top: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 200px;
   width: 320px;
   margin: auto;
@@ -153,15 +162,12 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.image {
-  border: 1px solid red;
-}
-#content {
-  border-radius: 1px solid blue;
-}
+
+
 .image {
   width: 100%;
 }
+
 .add_to_cart_btn {
   border: 1px solid #4296cb;
   background: #4296cb;
@@ -173,4 +179,19 @@
   border-radius: 10px;
   font-size: 15px;
   font-weight: 400;
+}
+.title_des_div{
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 600;
+}
+.title_des_div > div:nth-child(1){
+  color: #4296cb;
+}
+.prise_btn_div > div{
+  font-size: 17px;
+  font-weight: 600;
+}
+#content-div{
+  margin-bottom: 30px;
 }
