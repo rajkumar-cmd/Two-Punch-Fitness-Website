@@ -276,10 +276,7 @@ export const navbar = () => {
   </div>
 
 
-  <div id="ham">
-      <i  class="fa-sharp fa-solid fa-bars"></i>
-    </div>
-    
+ 
     
     
     `;
