@@ -123,17 +123,17 @@ document.getElementById("routines").addEventListener("click",function(){
 })
 // #####################
 
-// ##################
-document.getElementById("articles").addEventListener("click",function(){
-  window.location.assign("#");
-})
-// #####################
 
-// ##################
+document.getElementById("articles").addEventListener("click",function(){
+  window.location.assign("./expert.html");
+})
+
+
+
 document.getElementById("receipes").addEventListener("click",function(){
   window.location.assign("./healthy_living.html");
 })
-// #####################
+
 
 
 document.getElementById("wellnessVideos").addEventListener("click",function(){
@@ -153,26 +153,30 @@ document.getElementById("whatNew").addEventListener("click",function(){
 })
 // #####################
 
-// ##################
-document.getElementById("about").addEventListener("click",function(){
-  window.location.assign("#");
-})
-// #####################
 
-// ##################
-document.getElementById("careers").addEventListener("click",function(){
-  window.location.assign("#");
+document.getElementById("about").addEventListener("click",function(){
+  window.location.assign("./about.html");
 })
-// #####################
+
+// ########################
+document.getElementById("careers").addEventListener("click",function(){
+  window.location.assign("./careers.html");
+})
+// ###########################
 
 // ##################
 document.getElementById("tut").addEventListener("click",function(){
-  window.location.assign("#");
+  window.location.assign("./tutorials.html");
 })
 // #####################
 
 // ##################
 document.getElementById("ourTeam").addEventListener("click",function(){
-  window.location.assign("#");
+  window.location.assign("./ourteam.html");
 })
 // #####################
+
+
+document.getElementById("cart").addEventListener("click",function(){
+  window.location.assign("./payment.html");
+})
