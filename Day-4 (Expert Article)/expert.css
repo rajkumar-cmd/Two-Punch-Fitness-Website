@@ -1,0 +1,220 @@
+.flex {
+  display: flex;
+}
+
+#filter-menu {
+  display: flex;
+  /* border: 1px solid red; */
+  display: none;
+  max-width: 1400px;
+  margin: auto;
+}
+#search-menu {
+  display: none;
+}
+#heading {
+  /* max-width: 1400px; */
+  /* border: 1px solid red; */
+  margin: auto;
+  /* padding-right: 3rem;
+    padding-left: 3rem; */
+}
+
+.gift-card {
+  background-image: url("https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png");
+  border: 3px solid white;
+  width: 340px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.gift-card:hover {
+  cursor: pointer;
+  border-color: #4296cb;
+  transition: 1s;
+}
+#content {
+  /* border: 2px solid red; */
+  display: flex;
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  position: relative;
+  max-width: 1400px;
+  padding-right: 4px;
+  padding-left: 4px;
+  /* display: flex; */
+  flex-wrap: wrap;
+  margin: 0px auto;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  background-color: white;
+}
+#filter-menu > div {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+}
+.search-menu-div {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.search-svg {
+  padding: 0px;
+  transform: translateX(-15px);
+}
+.sm-input {
+  width: 400px;
+  height: 40px;
+}
+
+#filter-menu > div > div {
+  margin: auto;
+  margin-top: 0px;
+}
+
+#filter-search-content {
+  /* border: 1px solid blue; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  /* border: 1px solid black; */
+  border: 3px solid white;
+  width: 340px;
+  height: 440px;
+  /* -webkit-box-flex: 0; */
+  /* flex: 0 0 auto; */
+}
+.card:hover {
+  cursor: pointer;
+  border-color: #4296cb;
+  transition: 1s;
+
+  /* -webkit-box-flex: 1; */
+}
+.card-content-1 {
+  padding: 0px 30px;
+}
+.card-content-2 {
+  padding: 0px 12px;
+}
+.img-div > img {
+  width: 100%;
+}
+.blue {
+  color: #4296cb;
+}
+
+.card-price-btn {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid yellow; */
+  margin-top: 65px;
+}
+.card-btn {
+  border: 1px solid #4296cb;
+  margin-top: 13px;
+  background: none;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #4296cb;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.filter_btn {
+  border: 3px solid #4296cb;
+  height: 61px;
+  width: 130px;
+  background-color: white;
+  color: #3337a8;
+}
+.search_btn {
+  border: 3px solid #4296cb;
+  height: 61px;
+  width: 130px;
+  background-color: white;
+  color: #3337a8;
+  margin-left: -5px;
+}
+#filter-search {
+  /* border: 1px solid #f0f4f6; */
+  max-width: 1200px;
+}
+.search_btn:hover,
+.filter_btn:hover {
+  color: black;
+}
+
+.wb-cont {
+  max-width: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* border: 1px solid #f0f4f6; */
+}
+.wp-div {
+  max-width: 1400px;
+  /* border: 1px solid blue; */
+  margin: auto;
+  /* border: 1px solid #f0f4f6; */
+}
+.fs-cont {
+  width: 100%;
+  /* border: 1px solid #f0f4f6; */
+  max-width: 1400px;
+  margin: auto;
+}
+#content-div {
+  /* border: 1px solid blue; */
+  width: 100%;
+  background-color: #f0f4f6;
+}
+.sm-input {
+  border: 3px solid #4296cb;
+}
+.sm-input::placeholder {
+  color: rgb(7, 7, 170);
+}
+.redflame {
+  margin-right: -12px;
+}
+
+.redflame,
+.blackflame {
+  transform: translateY(2px);
+}
+
+.wp-div > h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  margin-left: 40px;
+}
+.wp-div > p {
+  font-size: 20px;
+}
+
+label {
+  color: gray;
+  font-weight: 100;
+}
+h4 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+i {
+  margin-left: -30px;
+}
