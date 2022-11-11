@@ -1,6 +1,6 @@
-// import { sidebar } from "./Components/sidebar.js"
+import { sidebar } from "./Components/sidebar.js"
 
-// document.getElementById("sidebar1").innerHTML = sidebar()
+document.getElementById("sidebar1").innerHTML = sidebar()
 
 import footer from "../Components/footer.js";
 
