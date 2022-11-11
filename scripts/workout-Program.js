@@ -1,3 +1,6 @@
+import {navbar} from "/Components/navbar"
+document.getElementById("navbar").innerHTML=navbar();
+
 let filter_btn = document.querySelector(".filter_btn");
 let search_btn = document.querySelector(".search_btn");
 
