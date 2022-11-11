@@ -1,5 +1,45 @@
 .content {
   display: flex;
+}
+#filter-menu {
+  display: flex;
+  /* border: 1px solid red; */
+  display: none;
+  max-width: 1400px;
+  margin: auto;
+}
+#search-menu {
+  display: none;
+}
+#heading {
+  /* max-width: 1400px; */
+  /* border: 1px solid red; */
+  margin: auto;
+  /* padding-right: 3rem;
+    padding-left: 3rem; */
+}
+
+.gift-card {
+  background-image: url("https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png");
+  border: 3px solid white;
+  width: 340px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.gift-card:hover {
+  cursor: pointer;
+  border-color: #4296cb;
+  transition: 1s;
+}
+#content {
+  /* border: 2px solid red; */
+  display: flex;
+  /* padding: 10px; */
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
