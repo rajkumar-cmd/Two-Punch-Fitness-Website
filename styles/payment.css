@@ -47,6 +47,9 @@
     
 
 }
+#shopRemove{
+    cursor: pointer;
+}
 .payment-heading > div{
     margin: auto;
     font-size: large;

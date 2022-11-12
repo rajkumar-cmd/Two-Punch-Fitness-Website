@@ -7,9 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/payment.css" />
   <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="./styles/footer.css">
+<link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
 <body>
+  <div id="navbar"></div>
+  <div id="sidebar1"></div>
   <div id="cont-div">
     <div class="container">
       <div class="heading-div">
@@ -42,6 +53,7 @@
       </div>
     </div>
   </div>
+  <div id="footer"></div>
 </body>
 
 </html>
@@ -61,8 +73,10 @@
   })
 
   let fetchData = async () => {
+
     let LS_data = JSON.parse(localStorage.getItem("obj")) || [];
     let container = document.querySelector("#js-append");
+    document.querySelector("#js-append")=null;
     LS_data.forEach(function (el) {
       let cont_div = document.createElement("div")
       cont_div.setAttribute("class", "cart_div")
@@ -83,6 +97,10 @@
 
       let col_2 = document.createElement("div")
       col_2.innerText = "Remove"
+      col_2.setAttribute("id","shopRemove");
+      col_2.addEventListener("click",function(event){
+        remove(el);
+      })
 
       let col_3 = document.createElement("div")
       col_3.innerText = `$${el.prise}`
@@ -98,17 +116,19 @@
   };
   fetchData();
 
-  function remove(event) {
-    event.target.parentNode.remove();
+  function remove(el) {
     let data = JSON.parse(localStorage.getItem("obj")) || [];
-    let LS_obj_remove = event.target.id;
-    let updated_data = data.filter((el) => {
-      if (el.img !== LS_obj_remove) {
+    // let LS_obj_remove = event.target.id;
+    let updated_data = data.filter((index) => {
+      if (el!== index) {
         return el;
       }
     });
+    // let domObj=JSON.parse(localStorage.getItem("obj"));
+    // domObj.splice(event,1);
     localStorage.setItem("obj", JSON.stringify(updated_data));
     calculate()
+    fetchData();
   }
 
   function calculate() {
@@ -122,3 +142,4 @@
   }
   calculate()
 </script>
+<script type="module" src="./scripts/index_nav.js"></script>
