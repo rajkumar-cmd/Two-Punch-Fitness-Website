@@ -6,6 +6,25 @@ body{
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 }
 
+@media only screen and (min-width: 1080px) and (max-width: 1350px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
+  @media only screen and (min-width: 700px) and (max-width: 1080px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
+
 .header{
     object-fit: cover;
     background-image:url(https://d18zdz9g6n5za7.cloudfront.net/about/masthead-xs@2X.jpg);
