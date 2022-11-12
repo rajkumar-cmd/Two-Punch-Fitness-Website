@@ -111,7 +111,7 @@
   color: white;
   display: flex;
   gap: 7rem;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   justify-content: center;
   align-items: center;
   z-index: -1;
@@ -246,6 +246,7 @@
   #one{
     margin-top: 0;
   }
+  
 }
 
 @media only screen and (max-width: 1058px) {

@@ -25,6 +25,7 @@ body {
 }
 #two {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin: auto;
   margin-top: 10px;

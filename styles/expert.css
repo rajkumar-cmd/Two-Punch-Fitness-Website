@@ -1,5 +1,9 @@
 .content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 #filter-menu {
   display: flex;
@@ -18,7 +22,15 @@
   /* padding-right: 3rem;
     padding-left: 3rem; */
 }
-
+#heading_div{
+   margin: 1rem;
+}
+.wp-div > h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  border: 1px solid rgba(128, 128, 128, 0.333);
+  padding: 0 1rem 0 1rem;
+}
 .gift-card {
   background-image: url("https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png");
   border: 3px solid white;
@@ -47,34 +59,35 @@
 #container_div {
   width: 100%;
   /* border: 1px solid red; */
-  margin-bottom: 30px;
+
+  margin-bottom: 1rem;
+  margin-top: 14rem;
+
 }
 .container {
-  max-width:1250px;
+  max-width:100%;
   /* border: 1px solid blue; */
   margin: auto;
 }
-.heading_div {
-  /* border: 1px solid red; */
-}
+
 .content-div {
   /* border: 1px solid red; */
-  margin-top: 50px;
+      margin: 1rem 1rem 0 1rem;
   
 }
-.content {
-  /* border: 1px solid blue; */
-}
+
 .image {
   /* border: 1px solid black; */
   width: 100%;
 }
 .cart_div {
-  width: 300px;
+  width: 100%;
   /* border: 1px solid green; */
-  height: 330px;
-  border: 1px solid black;
+  min-height: 20rem;
+  
   cursor: pointer;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+
 }
 .cart_div:hover{
   border: 1px solid #4296cb;
@@ -82,7 +95,7 @@
 }
 .card_content {
   /* border: 1px solid red; */
-  height: 150px;
+  height: fit-content;
 }
 .card-content-1 {
   padding: 13px;
@@ -96,12 +109,29 @@
 .card-content-1> div:nth-child(1){
   color: #4296cb;
 }
-.wp-div > h1
-{
-  margin-bottom: 20px;
-  font-size: 40px;
-}
+
 .wp-div > p{
-  font-size: 25px;
+  font-size: 1.3rem;
+  text-align: center;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1058px){
+  .filt_main{
+        
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-top: 2rem;
+  }
+  #one{
+    margin-top: 0;
+  }
+  #container_div {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+  
 }
