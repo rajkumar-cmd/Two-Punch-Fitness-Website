@@ -27,6 +27,52 @@ search_btn.onclick = () => {
     }
 };
 
+// Price check
+document.querySelector("#doll20").addEventListener("change",()=>{
+    
+})
+document.querySelector("#doll30").addEventListener("change",()=>{
+    
+})
+document.querySelector("#doll40").addEventListener("change",()=>{
+    
+})
+
+// Workout time check
+document.querySelector("#min20").addEventListener("change",()=>{
+    
+})
+document.querySelector("#min30").addEventListener("change",()=>{
+    
+})
+document.querySelector("#min40").addEventListener("change",()=>{
+    
+})
+document.querySelector("#min50").addEventListener("change",()=>{
+    
+})
+document.querySelector("#min60").addEventListener("change",()=>{
+    
+})
+
+// Difficulty check
+document.querySelector("#diff5").addEventListener("change",()=>{
+    
+})
+document.querySelector("#diff4").addEventListener("change",()=>{
+    
+})
+document.querySelector("#diff3").addEventListener("change",()=>{
+    
+})
+document.querySelector("#diff2").addEventListener("change",()=>{
+    
+})
+document.querySelector("#diff1").addEventListener("change",()=>{
+    
+})
+
+
 const getData=async()=>{
     let res=await fetch(`http://localhost:3000/workoutVideos`);
     let data=await res.json();

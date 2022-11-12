@@ -67,7 +67,7 @@ const appendWorkoutData=async(data,components)=>{
         
         let price=document.createElement("div");
         price.setAttribute("id","price");
-        price.innerText=`Price- $${el.price}`;
+        price.innerText=`Price- $${el.prise}`;
         
         let buy=document.createElement("div");
         buy.innerText="ADD TO CART";
