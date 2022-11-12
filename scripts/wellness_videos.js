@@ -71,9 +71,9 @@ const appendWorkoutData=async(data,components)=>{
         let buy=document.createElement("div");
         buy.innerText="ADD TO CART";
         buy.setAttribute("id","buyButton");
-        buy.onclick=()=>{
-            console.log(el.price);
-        }
+        buy.addEventListener("click",()=>{
+            paymentPage(el);
+        })
         divMain.append(img,name);
         divText.append(description,type,time,price,buy);
         div.append(divMain,divText);
@@ -101,3 +101,12 @@ const createButtons=(data,itemsPerPage)=>{
     }
 }
 getData();
+
+let paymentPage=(el) => {
+    let obj=el
+    console.log(obj)
+     let data= JSON.parse(localStorage.getItem("obj")) || []
+     data.push(obj)
+     localStorage.setItem("obj",JSON.stringify(data))
+     window.location.href="/payment.html"
+}
