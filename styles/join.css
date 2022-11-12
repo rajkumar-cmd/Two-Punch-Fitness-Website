@@ -13,6 +13,11 @@ body {
   background: -o-linear-gradient(320deg, #cbe8ff 0%, #e1ddfa 60%, #ffedc9 100%);
   background: linear-gradient(130deg, #cbe8ff 0%, #e1ddfa 60%, #ffedc9 100%);
 }
+@media (min-width: 600px) and (max-width: 1000px){
+  #one{
+      flex-direction: column;
+  }
+}
 #one h1 {
   margin-left: 30%;
   margin-top: 20%;
@@ -28,6 +33,11 @@ body {
   gap: 10px;
   margin: auto;
   margin-top: 10px;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+  #two{
+      flex-direction: column;
+  }
 }
 .two1 {
   background: #edf8fc;
@@ -88,6 +98,11 @@ body {
   background: linear-gradient(130deg, #ece6f8 0%, #f9e7f6 100%);
   margin-top: 10px;
 }
+@media (min-width: 600px) and (max-width: 1000px){
+  #thre{
+      flex-direction: column;
+  }
+}
 #thre h1 {
   margin-left: 30%;
   margin-top: 20%;
@@ -100,7 +115,7 @@ body {
 }
 #pass_btn {
   width: 20%;
-  height: 12%;
+  height: 3rem;
   border-radius: 6px;
   font-size: large;
   /* font-weight: bold; */

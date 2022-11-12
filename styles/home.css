@@ -18,10 +18,15 @@ body {
   color: #fff;
   /* background-color:linear-gradient(to right, #3d97ce , #12debb);; */
 }
+@media (min-width: 600px) and (max-width: 1000px){
+  #onee{
+      flex-direction: column;
+  }
+}
 
 #join_now {
   width: 20%;
-  height: 8%;
+  height: 2rem;
   border-radius: 6px;
   font-size: large;
   /* font-weight: bold; */
@@ -90,6 +95,7 @@ body {
 }
 #two div img {
   /* background-color: red; */
+  width: 100%;
   /* padding-top: 5%; */
   display: block;
   margin-left: auto;
@@ -97,6 +103,11 @@ body {
 }
 #three {
   display: flex;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+  #three{
+      flex-direction: column;
+  }
 }
 #three div h1 {
   text-align: center;
@@ -130,6 +141,11 @@ body {
   display: flex;
   /* margin: auto; */
 }
+@media (min-width: 600px) and (max-width: 1000px){
+  #four{
+      flex-direction: column;
+  }
+}
 .four1 {
   margin: auto;
   background: #000000;
@@ -162,6 +178,11 @@ body {
 #five {
   background: #effbff;
   margin-top: 1rem;
+}
+@media (min-width: 600px) and (max-width: 1000px){
+  #five{
+      flex-direction: column;
+  }
 }
 #five img {
   width: 100%;
