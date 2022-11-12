@@ -202,7 +202,7 @@ export const navbar = () => {
           <div class="inner_page">
 
 
-            <div id="about" class="logo_name_container">
+            <div id="about1" class="logo_name_container">
               <div class="workout_info">
                 <img
                 src="https://excelautomationinc.com/wp-content/uploads/2019/05/about.png"

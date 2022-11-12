@@ -154,7 +154,7 @@ document.getElementById("whatNew").addEventListener("click",function(){
 // #####################
 
 
-document.getElementById("about").addEventListener("click",function(){
+document.getElementById("about1").addEventListener("click",function(){
   window.location.assign("./about.html");
 })
 
