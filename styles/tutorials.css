@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.top{
+    padding-left: 120px;
+    width: 70%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.top>h1{
+    color: #212432;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    padding-bottom: 20px;
+}
+.top>p{
+    color: #4e5262;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.top-1{
+    background-color: #F0F4F6;
+    width: 10%;
+    height: 50px;
+    padding-left: 120px;
+}

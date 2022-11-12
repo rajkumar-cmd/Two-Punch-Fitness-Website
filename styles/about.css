@@ -8,7 +8,7 @@ body{
 
 .header{
     object-fit: cover;
-    background-image:url(../img/masthead-xs@2X.jpg);
+    background-image:url(https://d18zdz9g6n5za7.cloudfront.net/about/masthead-xs@2X.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: auto;
@@ -148,11 +148,7 @@ body{
     font-size: 16px;
     line-height: 32px;
 }
-.last-1{
-    padding:20px 0 20px 0 ;
-    margin: auto;
-    padding-left: 15%;
-}
+
 
 
 .padding{
@@ -176,17 +172,140 @@ body{
 }
 
 .mid_img{
-    background-image: url(../img/video.jpg);
-    width: 100%;
-    size: 120%;
+    width: 120%;
 }
-
-
 .last{
-    background-image: url(../img/img.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: auto;
-    height: 600px;
-    
+    display: flex;
 }
+
+
+
+
+.last_img-1{
+    background-image: url(https://d18zdz9g6n5za7.cloudfront.net/about/bio-daniel.jpg);
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 800px;
+}
+
+.last_img-2{
+    background-image: url(https://d18zdz9g6n5za7.cloudfront.net/about/bio-kelli.jpg);
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 800px;
+}
+
+.last_img-1>div{
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    padding-bottom: 10px;
+    height: 150px;
+    margin: 500px 20px 0 100px ;
+}
+.last_img-1>div>h6{
+    color: #212432;
+    padding-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.last_img-1>div>p{
+    color: #4e5262;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 65%;
+    padding-left: 90px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+.last_img-1>div>a{
+    color: #4296cb;
+}
+
+
+
+
+
+
+.last_img-2>div{
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    padding-bottom: 10px;
+    height: 150px;
+    margin: 500px 20px 0 100px ;
+}
+.last_img-2>div>h6{
+    color: #212432;
+    padding-top: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.last_img-2>div>p{
+    color: #4e5262;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 65%;
+    padding-left: 90px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+.last_img-2>div>a{
+    color: #4296cb;
+}
+
+.aa{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #212432;
+    font-weight: 400;
+}
+
+.ab{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 10px;
+    line-height: 32px;
+    color: #212432;
+    font-weight: 400;
+}
+
+.last-1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ac{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 12px;
+    line-height: 32px;
+    color: #212432;
+    font-weight: 400;
+}
+
+.ad{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 10px;
+    line-height: 32px;
+    color: #212432;
+    font-weight: 400;
+}
+
+.ae{
+    font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #212432;
+    font-weight: 400;
+}
+

@@ -1,0 +1,197 @@
+.flex {
+  display: flex;
+}
+
+#filter-menu {
+  display: flex;
+  /* border: 1px solid red; */
+  display: none;
+  max-width: 1400px;
+  margin: auto;
+}
+#search-menu {
+  display: none;
+}
+#heading {
+  margin: auto;
+}
+
+.gift-card {
+  background-image: url("https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png");
+  border: 3px solid white;
+  width: 340px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.gift-card:hover {
+  cursor: pointer;
+  border-color: #4296cb;
+  transition: 1s;
+}
+#content {
+  /* border: 2px solid red; */
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  position: relative;
+  max-width: 1400px;
+  padding-right: 4px;
+  padding-left: 4px;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  background-color: white;
+  
+}
+#filter-menu > div {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 70px;
+  display: flex;
+}
+.search-menu-div {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.search-svg {
+  padding: 0px;
+  transform: translateX(-15px);
+}
+.sm-input {
+  width: 400px;
+  height: 40px;
+}
+
+#filter-menu > div > div {
+  margin: auto;
+  margin-top: 0px;
+}
+
+#filter-search-content {
+  /* border: 1px solid blue; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.filter_btn {
+  border: 3px solid #4296cb;
+  height: 61px;
+  width: 130px;
+  background-color: white;
+  color: #3337a8;
+}
+.search_btn {
+  border: 3px solid #4296cb;
+  height: 61px;
+  width: 130px;
+  background-color: white;
+  color: #3337a8;
+  margin-left: -5px;
+}
+#filter-search {
+  max-width: 1200px;
+}
+.search_btn:hover,
+.filter_btn:hover {
+  color: black;
+}
+
+.wb-cont {
+  max-width: 100%;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+.wp-div {
+  max-width: 1400px;
+  /* border: 1px solid blue; */
+  margin: auto;
+}
+.fs-cont {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+.gift-card-div {
+  height: auto;
+  /* border: 1px solid black; */
+  width: auto;
+}
+.sm-input {
+  border: 3px solid #4296cb;
+}
+.sm-input::placeholder {
+  color: rgb(7, 7, 170);
+}
+.prise_btn_div {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_div {
+  border: 1px solid black;
+  height: 400px;
+}
+.cart_div:hover{
+  border: 1px solid #4296cb;
+  transition: 0.5s;
+
+}
+.cont_div {
+  padding: 0px 20px;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+  height: 200px;
+  width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title_des_div > div {
+  margin-bottom: 10px;
+}
+.cont_div > * {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+
+.image {
+  width: 100%;
+}
+
+.add_to_cart_btn {
+  border: 1px solid #4296cb;
+  background: #4296cb;
+  width: 120px;
+  height: 40px;
+  color: white;
+  border: blue;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.title_des_div{
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 600;
+}
+.title_des_div > div:nth-child(1){
+  color: #4296cb;
+}
+.prise_btn_div > div{
+  font-size: 17px;
+  font-weight: 600;
+}
+#content-div{
+  margin-bottom: 30px;
+}

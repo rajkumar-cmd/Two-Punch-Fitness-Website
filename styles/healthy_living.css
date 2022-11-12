@@ -5,7 +5,24 @@
 .flex {
     display: flex;
   }
-  
+  @media only screen and (min-width: 1080px) and (max-width: 1350px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
+  @media only screen and (min-width: 700px) and (max-width: 1080px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    #components>#cardRes{
+      height: fit-content;
+      min-height: 32rem;
+    }
+  }
   #filter-menu {
     display: flex;
     /* border: 1px solid red; */
