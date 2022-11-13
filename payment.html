@@ -76,8 +76,8 @@
 
     let LS_data = JSON.parse(localStorage.getItem("obj")) || [];
     let container = document.querySelector("#js-append");
-    document.querySelector("#js-append")=null;
-    LS_data.forEach(function (el) {
+    container.innerHTML=""
+    LS_data.forEach(function (el,i) {
       let cont_div = document.createElement("div")
       cont_div.setAttribute("class", "cart_div")
 
@@ -98,8 +98,8 @@
       let col_2 = document.createElement("div")
       col_2.innerText = "Remove"
       col_2.setAttribute("id","shopRemove");
-      col_2.addEventListener("click",function(event){
-        remove(el);
+      col_2.addEventListener("click",function(){
+        remove(i);
       })
 
       let col_3 = document.createElement("div")
@@ -116,16 +116,15 @@
   };
   fetchData();
 
-  function remove(el) {
+  function remove(i) {
     let data = JSON.parse(localStorage.getItem("obj")) || [];
-    // let LS_obj_remove = event.target.id;
-    let updated_data = data.filter((index) => {
-      if (el!== index) {
-        return el;
+    let updated_data = data.filter((el,index) => {
+      if (i !==index) {
+        return i;
       }
     });
-    // let domObj=JSON.parse(localStorage.getItem("obj"));
-    // domObj.splice(event,1);
+    console.log(updated_data)
+   
     localStorage.setItem("obj", JSON.stringify(updated_data));
     calculate()
     fetchData();
