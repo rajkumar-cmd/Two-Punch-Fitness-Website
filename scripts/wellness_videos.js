@@ -27,6 +27,96 @@ search_btn.onclick = () => {
     }
 };
 
+// Price check
+document.querySelector("#doll20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll30").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=30`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll40").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=40`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll50").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=50`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll60").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=60`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll70").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=70`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll80").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?prise_lte=80`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+
+// Workout Time
+document.querySelector("#min5").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?time_lte=5`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min10").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?time_lte=10`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min15").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?time_lte=15`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?time_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min30").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/wellnessVideos?time_lte=30`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#filterReset").addEventListener("click",async()=>{
+    window.location.reload();
+})
 const getData=async()=>{
     let res=await fetch(`http://localhost:3000/wellnessVideos`);
     let data=await res.json();
@@ -89,6 +179,7 @@ const getPageData=async(clickedBtn,limit)=>{
 getPageData(1,12);
 let buttonDiv=document.getElementById("buttons");
 const createButtons=(data,itemsPerPage)=>{
+    document.getElementById("buttons").innerHTML="";
     const buttons=Math.ceil(data/itemsPerPage);
     for(let i=1;i<=buttons;i++){
         let btn=document.createElement("div");
