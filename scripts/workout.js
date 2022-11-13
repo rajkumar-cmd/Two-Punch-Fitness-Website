@@ -28,50 +28,117 @@ search_btn.onclick = () => {
 };
 
 // Price check
-document.querySelector("#doll20").addEventListener("change",()=>{
-    
+document.querySelector("#doll20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?prise_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#doll30").addEventListener("change",()=>{
-    
+document.querySelector("#doll30").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?prise_lte=30`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#doll40").addEventListener("change",()=>{
-    
+document.querySelector("#doll40").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?prise_lte=40`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-
+document.querySelector("#doll50").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?prise_lte=50`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#doll60").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?prise_lte=60`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
 // Workout time check
-document.querySelector("#min20").addEventListener("change",()=>{
-    
+document.querySelector("#min20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?time_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#min30").addEventListener("change",()=>{
-    
+document.querySelector("#min30").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?time_lte=30`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#min40").addEventListener("change",()=>{
-    
+document.querySelector("#min40").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?time_lte=40`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#min50").addEventListener("change",()=>{
-    
+document.querySelector("#min50").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?time_lte=50`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#min60").addEventListener("change",()=>{
-    
+document.querySelector("#min60").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?time_lte=60`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
 
 // Difficulty check
-document.querySelector("#diff5").addEventListener("change",()=>{
-    
+document.querySelector("#diff5").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?difficulty_lte=5&difficulty_gte=5`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#diff4").addEventListener("change",()=>{
-    
+document.querySelector("#diff4").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?difficulty_lte=4&difficulty_gte=4`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#diff3").addEventListener("change",()=>{
-    
+document.querySelector("#diff3").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?difficulty_lte=3&difficulty_gte=3`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#diff2").addEventListener("change",()=>{
-    
+document.querySelector("#diff2").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?difficulty_lte=2&difficulty_gte=2`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-document.querySelector("#diff1").addEventListener("change",()=>{
-    
+document.querySelector("#diff1").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/workoutVideos?difficulty_lte=1&difficulty_gte=1`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
 })
-
+document.querySelector("#filterReset").addEventListener("click",async()=>{
+    window.location.reload();
+})
 
 const getData=async()=>{
     let res=await fetch(`http://localhost:3000/workoutVideos`);
@@ -138,7 +205,9 @@ const getPageData=async(clickedBtn,limit)=>{
 }
 getPageData(1,12);
 let buttonDiv=document.getElementById("buttons");
+
 const createButtons=(data,itemsPerPage)=>{
+    document.getElementById("buttons").innerHTML="";
     const buttons=Math.ceil(data/itemsPerPage);
     for(let i=1;i<=buttons;i++){
         let btn=document.createElement("div");
