@@ -19,11 +19,11 @@
 
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input class="login_email" type="text" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <input type="password" class="login_pass" placeholder="Enter your password" required>
                         <i class="uil uil-lock icon"></i>
                     </div>
 
@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Login">
+                        <input class="login_Btn" type="button" value="Login">
                     </div>
                 </form>
 
@@ -54,19 +54,20 @@
 
                 <form action="#">
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your name" required>
+                        <input class="name" type="text" placeholder="Enter your name" required>
                         <i class="uil uil-user"></i>
                     </div>
                     <div class="input-field">
-                        <input type="text" placeholder="Enter your email" required>
+                        <input class="email" type="text" placeholder="Enter your email" required>
                         <i class="uil uil-envelope icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Create a password" required>
+                        <input class="password" type="password" class="password" placeholder="Create a password"
+                            required>
                         <i class="uil uil-lock icon"></i>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="password" placeholder="Confirm a password" required>
+                        <input type="password" class="password_conf" placeholder="Confirm a password" required>
                         <i class="uil uil-lock icon"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
@@ -79,7 +80,7 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Signup">
+                        <input class="sigh_Up_Btn" type="button" value="Signup">
                     </div>
                 </form>
 
@@ -96,16 +97,72 @@
 </html>
 
 <script>
-    container= document.querySelector(".container")
-        signUp = document.querySelector(".signup-link"),
+    container = document.querySelector(".container")
+    signUp = document.querySelector(".signup-link"),
         login = document.querySelector(".login-link");
+
 
     // js code to appear signup and login form
     signUp.addEventListener("click", () => {
         container.classList.add("active");
+
     });
     login.addEventListener("click", () => {
         container.classList.remove("active");
+
     });
+
+    let sigh_Up_Btn = document.querySelector(".sigh_Up_Btn")
+    sigh_Up_Btn.addEventListener("click", () => {
+
+        reg_data()
+        
+    })
+
+    let login_Btn = document.querySelector(".login_Btn")
+    login_Btn.addEventListener("click", () => {
+        console.log("Hi")
+        Login()
+
+
+    })
+    //Login SighUp Functionality
+    function reg_data() {
+        let user_name = document.querySelector(".name").value
+        let user_email = document.querySelector(".email").value
+        let user_password = document.querySelector(".password").value
+        let user_password_conf = document.querySelector(".password_conf").value
+
+        if (user_password == user_password_conf) {
+            let reg_obj = {
+                user_name,
+                user_email,
+                user_password,
+                user_password_conf
+            }
+            localStorage.setItem("reg_detail", JSON.stringify(reg_obj))
+
+        } else {
+            window.alert("Password Not Same...!!!!")
+        }
+    }
+    function Login() {
+        let reg_data = JSON.parse(localStorage.getItem("reg_detail")) || 0
+
+        if (reg_data !== 0) {
+            let login_email = document.querySelector(".login_email").value
+            let login_pass = document.querySelector(".login_pass").value
+            if (reg_data.user_email === login_email && reg_data.user_password === login_pass) {
+                window.alert("Login Successfull...!!!!!")
+                window.location.href = "./home.html"
+            } else {
+                window.alert("Wrong Email or Password ")
+            }
+
+        }else{
+            window.alert("User Not Found")
+        }
+
+    }
 
 </script>
