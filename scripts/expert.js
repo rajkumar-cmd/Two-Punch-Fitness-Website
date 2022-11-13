@@ -8,7 +8,7 @@
 
 let fetchData = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/expert-article`);
+    let res = await fetch(`https://server-workout.onrender.com/expert-article`);
     let data = await res.json();
     console.log(data);
    appendindData(data)

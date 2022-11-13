@@ -32,7 +32,7 @@ let content_div = document.querySelector("#content");
 
 let fetchData = async () => {
   try {
-    let res = await fetch(`http://localhost:3000/meals`);
+    let res = await fetch(`https://server-workout.onrender.com/meals`);
     let data = await res.json();
     console.log(data);
     appendindData(data)

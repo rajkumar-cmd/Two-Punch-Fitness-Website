@@ -25,21 +25,21 @@ search_btn.onclick = () => {
 
 // Prep Time
 document.querySelector("#prep5").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=5`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prepTime_lte=5`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#prep15").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=15`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prepTime_lte=15`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#prep30").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=30`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prepTime_lte=30`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
@@ -48,28 +48,28 @@ document.querySelector("#prep30").addEventListener("change",async()=>{
 
 // Cook Time
 document.querySelector("#min5").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=5`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?cookTime_lte=5`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#min10").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=10`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?cookTime_lte=10`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#min15").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=15`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?cookTime_lte=15`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#min20").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=20`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?cookTime_lte=20`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
@@ -78,28 +78,28 @@ document.querySelector("#min20").addEventListener("change",async()=>{
 
 // prise
 document.querySelector("#pri10").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prise_lte=10`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prise_lte=10`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#pri15").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prise_lte=15`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prise_lte=15`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#pri20").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prise_lte=20`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prise_lte=20`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
     createButtons(data.length,12);
 })
 document.querySelector("#pri25").addEventListener("change",async()=>{
-    let res=await fetch(`http://localhost:3000/recipes?prise_lte=25`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?prise_lte=25`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
@@ -110,7 +110,7 @@ document.querySelector("#filterReset").addEventListener("click",async()=>{
 })
 
 const getData=async()=>{
-    let res=await fetch(`http://localhost:3000/recipes`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes`);
     let data=await res.json();
     // console.log(data);
     createButtons(data.length,12);
@@ -168,7 +168,7 @@ const appendWorkoutData=async(data,components)=>{
     });
 }
 const getPageData=async(clickedBtn,limit)=>{
-    let res=await fetch(`http://localhost:3000/recipes?_page=${clickedBtn}&_limit=${limit}`);
+    let res=await fetch(`https://server-workout.onrender.com/recipes?_page=${clickedBtn}&_limit=${limit}`);
     let data=await res.json();
     let components=document.getElementById("components");
     appendWorkoutData(data,components);
