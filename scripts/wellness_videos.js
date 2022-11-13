@@ -199,5 +199,5 @@ let paymentPage=(el) => {
      let data= JSON.parse(localStorage.getItem("obj")) || []
      data.push(obj)
      localStorage.setItem("obj",JSON.stringify(data))
-     window.location.href="/payment.html"
+     window.location.href="./payment.html"
 }
