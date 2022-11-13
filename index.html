@@ -116,7 +116,7 @@
     sigh_Up_Btn.addEventListener("click", () => {
 
         reg_data()
-        
+
     })
 
     let login_Btn = document.querySelector(".login_Btn")
@@ -141,6 +141,9 @@
                 user_password_conf
             }
             localStorage.setItem("reg_detail", JSON.stringify(reg_obj))
+            window.alert('SighUp Successfull...!!!')
+            location.reload()
+
 
         } else {
             window.alert("Password Not Same...!!!!")
@@ -159,7 +162,7 @@
                 window.alert("Wrong Email or Password ")
             }
 
-        }else{
+        } else {
             window.alert("User Not Found")
         }
 
