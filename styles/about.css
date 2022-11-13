@@ -36,7 +36,7 @@ body{
 }
 
 .mid{
-    padding-top: 150px;
+    padding-top: 2rem;
     padding-bottom: auto;
     text-align: center;
 
@@ -113,12 +113,18 @@ body{
 }
 
 
-.flex-img{
-    display: flex;
+.flex-img,.flex-img1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
 }
 .flex-img1{
-    display: flex;
+    margin-top: 0;
 }
+.flex-img img,.flex-img1 img{
+    width: 100%;
+}
+
 
 
 
@@ -172,7 +178,10 @@ body{
 }
 
 .mid_img{
-    width: 120%;
+    width: 100%;
+}
+.mid_img img{
+    width: 100%;
 }
 .last{
     display: flex;
@@ -184,24 +193,35 @@ body{
 .last_img-1{
     background-image: url(https://d18zdz9g6n5za7.cloudfront.net/about/bio-daniel.jpg);
     background-repeat: no-repeat;
-    width: 70%;
-    height: 800px;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    /* height: 800px; */
+    /* display: none */
 }
+
+ /* Center the image */
+/* Do not repeat the image */
 
 .last_img-2{
+
     background-image: url(https://d18zdz9g6n5za7.cloudfront.net/about/bio-kelli.jpg);
     background-repeat: no-repeat;
-    width: 70%;
-    height: 800px;
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    /* height: 800px; */
+    /* display: none; */
 }
 
-.last_img-1>div{
+.last_img-1>div,.last_img-2>div{
     text-align: center;
     background-color: white;
-    width: 500px;
+    width: 78%;
     padding-bottom: 10px;
-    height: 150px;
-    margin: 500px 20px 0 100px ;
+    margin-top: 25rem;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
 }
 .last_img-1>div>h6{
     color: #212432;
@@ -211,17 +231,7 @@ body{
     line-height: 28px;
 }
 
-.last_img-1>div>p{
-    color: #4e5262;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    width: 65%;
-    padding-left: 90px;
-    padding-top: 10px;
-    padding-bottom: 5px;
 
-}
 .last_img-1>div>a{
     color: #4296cb;
 }
@@ -231,14 +241,7 @@ body{
 
 
 
-.last_img-2>div{
-    text-align: center;
-    background-color: white;
-    width: 500px;
-    padding-bottom: 10px;
-    height: 150px;
-    margin: 500px 20px 0 100px ;
-}
+
 .last_img-2>div>h6{
     color: #212432;
     padding-top: 10px;
@@ -247,13 +250,12 @@ body{
     line-height: 28px;
 }
 
-.last_img-2>div>p{
+.last_img-2>div>p,.last_img-1>div>p{
     color: #4e5262;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 65%;
-    padding-left: 90px;
+   
     padding-top: 10px;
     padding-bottom: 5px;
 
