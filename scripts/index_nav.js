@@ -105,11 +105,11 @@ document.getElementById("workPro").addEventListener("click",function(){
   window.location.assign("./workout-Program.html");
 })
 
-// ##################
+
 document.getElementById("meal").addEventListener("click",function(){
-  window.location.assign("#");
+  window.location.assign("./meal.html");
 })
-// #####################
+
 
 // ##################
 document.getElementById("pilot").addEventListener("click",function(){

@@ -252,7 +252,7 @@ export const navbar = () => {
 
       </div>
       <div id="store"><a href="">STORE</a></div>
-      <div id="membership"><a href="">MEMBERSHIP</a></div>
+      <div id="membership"><a href="./join.html">MEMBERSHIP</a></div>
     </div>
     <div id="menu_controls">
           <div id="login">
