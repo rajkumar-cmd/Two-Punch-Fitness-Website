@@ -1,7 +1,3 @@
-// import { sidebar } from "./Components/sidebar.js"
-
-// document.getElementById("sidebar1").innerHTML = sidebar()
-
 import footer from "../Components/footer.js";
 
 document.getElementById("footer").innerHTML=footer();
@@ -38,6 +34,7 @@ const appendWorkoutData=async(data,components)=>{
     console.log(data);
     data.forEach((el)=> {
         let div=document.createElement("div");
+        div.setAttribute("id","cardRes");
 
         let divMain=document.createElement("div");
         divMain.setAttribute("id","mainImg");
@@ -70,14 +67,14 @@ const appendWorkoutData=async(data,components)=>{
         
         let price=document.createElement("div");
         price.setAttribute("id","price");
-        price.innerText=`Price- $${el.price}`;
+        price.innerText=`Price- $${el.prise}`;
         
         let buy=document.createElement("div");
         buy.innerText="ADD TO CART";
         buy.setAttribute("id","buyButton");
-        buy.onclick=()=>{
-            console.log(el.price);
-        }
+        buy.addEventListener("click",()=>{
+            paymentPage(el);
+        })
         divMain.append(img,name);
         divText.append(description,dietaryType,prepTime,cookTime,price,buy);
         div.append(divMain,divText);
@@ -105,3 +102,12 @@ const createButtons=(data,itemsPerPage)=>{
     }
 }
 getData();
+
+let paymentPage=(el) => {
+    let obj=el
+    console.log(obj)
+     let data= JSON.parse(localStorage.getItem("obj")) || []
+     data.push(obj)
+     localStorage.setItem("obj",JSON.stringify(data))
+     window.location.href="/payment.html"
+}

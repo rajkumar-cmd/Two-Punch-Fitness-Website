@@ -25,6 +25,7 @@ body {
 }
 #two {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin: auto;
   margin-top: 10px;
@@ -81,19 +82,19 @@ body {
   /* margin-left: 30%; */
   cursor: pointer;
 }
-#three {
+#thre {
   display: flex;
   background: -webkit-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
   background: -o-linear-gradient(320deg, #ece6f8 0%, #f9e7f6 100%);
   background: linear-gradient(130deg, #ece6f8 0%, #f9e7f6 100%);
   margin-top: 10px;
 }
-#three h1 {
+#thre h1 {
   margin-left: 30%;
   margin-top: 20%;
   font-size: 35px;
 }
-#three p {
+#thre p {
   margin-left: 30%;
   /* margin-top: 20%; */
   font-size: 20px;

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/payment.css" />
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="./styles/footer.css">
+<link rel="stylesheet" href="./styles/navbar.css">
+</head>
+
+<body>
+  <div id="navbar"></div>
+  <div id="sidebar1"></div>
+  <div id="cont-div">
+    <div class="container">
+      <div class="heading-div">
+        <div class="heading">
+          <h2>Shopping Bag</h2>
+        </div>
+      </div>
+
+      <div class="payment-container">
+        <div class="payment-table">
+          <div>
+            <div class="payment-heading">
+              <div>ITEM</div>
+              <div>Remove</div>
+              <div>Price</div>
+            </div>
+            <div id="js-append">
+
+            </div>
+            <div class="total">
+              <div>Total</div>
+              <div class="total-res">$779</div>
+            </div>
+            <div class="button">
+              <button class="continue-btn"> Continue Shopping</button>
+              <button class="proceed_to_pay">Proceed to Pay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+</html>
+<script>
+
+  let continue_btn = document.querySelector(".continue-btn")
+  continue_btn.addEventListener("click", () => {
+    window.location.href = "./home.html"
+  })
+  let proceed_to_pay_btn = document.querySelector(".proceed_to_pay")
+  proceed_to_pay_btn.addEventListener("click", () => {
+    empty = []
+    localStorage.setItem("obj", JSON.stringify(empty));
+
+    window.alert("Payment Successfull..!!!")
+    location.reload()
+  })
+
+  let fetchData = async () => {
+
+    let LS_data = JSON.parse(localStorage.getItem("obj")) || [];
+    let container = document.querySelector("#js-append");
+    document.querySelector("#js-append")=null;
+    LS_data.forEach(function (el) {
+      let cont_div = document.createElement("div")
+      cont_div.setAttribute("class", "cart_div")
+
+      let col_1 = document.createElement("div")
+      col_1.setAttribute("class", "col_1")
+      let img_div = document.createElement("div")
+      let img = document.createElement("img")
+      img.setAttribute("class", "image")
+      img.src = el.img
+      img_div.append(img)
+      img_content_div = document.createElement("div")
+      let p1 = document.createElement("p")
+      p1.innerText = "FB PLUS PASS"
+      let p2 = document.createElement("p")
+      p2.innerText = "15-Day Pass"
+      img_content_div.append(p1, p2)
+
+      let col_2 = document.createElement("div")
+      col_2.innerText = "Remove"
+      col_2.setAttribute("id","shopRemove");
+      col_2.addEventListener("click",function(event){
+        remove(el);
+      })
+
+      let col_3 = document.createElement("div")
+      col_3.innerText = `$${el.prise}`
+      col_1.append(img_div, img_content_div)
+      cont_div.append(col_1, col_2, col_3)
+      container.append(cont_div)
+
+
+
+    });
+
+
+  };
+  fetchData();
+
+  function remove(el) {
+    let data = JSON.parse(localStorage.getItem("obj")) || [];
+    // let LS_obj_remove = event.target.id;
+    let updated_data = data.filter((index) => {
+      if (el!== index) {
+        return el;
+      }
+    });
+    // let domObj=JSON.parse(localStorage.getItem("obj"));
+    // domObj.splice(event,1);
+    localStorage.setItem("obj", JSON.stringify(updated_data));
+    calculate()
+    fetchData();
+  }
+
+  function calculate() {
+    let data = JSON.parse(localStorage.getItem("obj")) || [];
+    let total = data.reduce((acc, el) => {
+      return acc += Number(el.prise)
+    }, 0)
+
+    document.querySelector(".total-res").innerText = `$${total}`
+
+  }
+  calculate()
+</script>
+<script type="module" src="./scripts/index_nav.js"></script>

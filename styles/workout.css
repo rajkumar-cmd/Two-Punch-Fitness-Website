@@ -139,19 +139,19 @@
 }
 
 .filter_btn {
-  border: 0.1px solid lightgrey;
+  border: 3px solid #8292B4;
   height: 50px;
   width: 130px;
   background-color: white;
-  color: gray;
+  color: #8292B4;
   cursor: pointer;
 }
 .search_btn {
-  border: 0.1px solid lightgrey;
+  border: 3px solid #8292B4;
   height: 50px;
   width: 130px;
   background-color: white;
-  color: gray;
+  color: #8292B4;
   margin-left: -5px;
   cursor: pointer;
 }
@@ -191,7 +191,6 @@
   width: 100%;
   background-color: #f0f4f6;
 }
-
 /* filters */
 
 .wv-cont {
@@ -254,4 +253,10 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+
+#starRating{
+  width: 70px;
+  /* height: 50px; */
 }

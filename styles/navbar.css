@@ -111,7 +111,7 @@
   color: white;
   display: flex;
   gap: 7rem;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   justify-content: center;
   align-items: center;
   z-index: -1;
@@ -162,6 +162,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 #search_mid {
@@ -179,10 +180,12 @@
 }
 
 #sidebar1 {
-  height: 100%;
+  /* height: 100%; */
+  width: 100%;
   display: none;
   background-color: #212432;
-  position: fixed;
+  /* position: fixed; */
+  z-index: 100;
 }
 
 #sidebar a {
@@ -192,26 +195,27 @@
     "Lucida Grande", sans-serif;
 }
 
-#ham {
+/* #ham {
   margin-left: 2rem;
   margin-top: -5%;
   z-index: 100;
   display: none;
-}
-#ham i {
+} */
+/* #ham i {
   height: 0.5rem;
   width: 1rem;
-}
-#cancel {
+} */
+/* #cancel {
   color: #fff;
-}
-#cancel i {
+} */
+/* #cancel i {
   font-size: 25px;
   margin-left: 14vw;
-}
+} */
 
 .inner_page_side {
   padding: 0.7rem 1.2rem;
+  text-align: center;
 }
 .inner_page_side > span > a {
   color: #fff;
@@ -224,17 +228,33 @@
 .items_div {
   display: none;
   /* flex-wrap: wrap; */
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
   /* color: azure; */
 }
 .items_div a {
   font-size: 0.6rem;
   color: #9a9ca1;
 }
+@media only screen and (min-width: 1058px){
+  .filt_main{
+        
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-top: 2rem;
+  }
+  #one{
+    margin-top: 0;
+  }
+  
+}
 
 @media only screen and (max-width: 1058px) {
   #menu_main {
     display: none;
+  }
+  #container{
+    margin-top: 14rem;
   }
   #search_mid {
     display: block;
@@ -255,10 +275,22 @@
     margin-top: -4rem;
     display: block;
   }
+  #sidebar1{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* margin-top: 2rem; */
+    z-index: 100;
+  }
+  #one{
+    margin-top: 13rem;
+  }
 }
 @media only screen and (max-width: 1058px) and (min-width: 599px) {
   #sidebar {
     width: 100%;
+    display: grid;
   }
   #ham {
     margin-left: 2rem;
@@ -275,6 +307,7 @@
 @media only screen and (max-width: 914px) and (min-width: 412px) {
   #sidebar {
     width: 100%;
+    display: grid;
   }
   #brand > a > img {
     min-height: 5rem;
@@ -297,7 +330,8 @@
 
 @media only screen and (max-width: 914px) and (min-width: 539px) {
   #sidebar {
-    width: 50%;
+    width: 100%;
+    display: grid;
   }
   #sidebar a {
     text-decoration: none;
@@ -311,13 +345,14 @@
 
 @media only screen and (max-width: 599px) {
   #search_mid input {
-    display: block;
+    display: none;
     width: 10rem;
   }
   #menu_controls {
     width: 32%;
   }
   #search {
+    display: none;
     margin-top: -1.4rem;
     margin-left: 9rem;
   }

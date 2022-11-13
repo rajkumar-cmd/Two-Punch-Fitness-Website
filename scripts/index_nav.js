@@ -69,20 +69,114 @@ let cancel = document.getElementById("cancel");
 let middle_contain = document.getElementById("middle_contain");
 let sidebar1 = document.getElementById("sidebar1");
 
-ham.onclick = () => {
-  sidebar1.style.display = "block";
-  sidebar1.style.width = "16vw";
-  middle_contain.style.width = "84vw";
-  middle_contain.style.marginLeft = "16vw";
-  ham.style.display = "none";
-  cancel.style.display = "block";
-};
+// ham.onclick = () => {
+//   sidebar1.style.display = "block";
 
-cancel.onclick = () => {
-  middle_contain.style.width = "100vw";
-  middle_contain.style.marginLeft = "vw";
+//   middle_contain.style.width = "84vw";
+//   middle_contain.style.marginLeft = "16vw";
+//   ham.style.display = "none";
+//   cancel.style.display = "block";
+// };
 
-  sidebar1.style.display = "none";
-  cancel.style.display = "none";
-  ham.style.display = "block";
-};
+// cancel.onclick = () => {
+//   middle_contain.style.width = "100vw";
+//   middle_contain.style.marginLeft = "vw";
+
+//   sidebar1.style.display = "none";
+//   cancel.style.display = "none";
+//   ham.style.display = "block";
+// };
+
+// File linking menu
+
+document.getElementById("workVideo").addEventListener("click",function(){
+  window.location.assign("./workout.html");
+})
+
+
+// ############################################
+document.getElementById("customWork").addEventListener("click",function(){
+  window.location.assign("#");
+})
+// #############################################
+
+
+document.getElementById("workPro").addEventListener("click",function(){
+  window.location.assign("./workout-Program.html");
+})
+
+
+document.getElementById("meal").addEventListener("click",function(){
+  window.location.assign("./meal.html");
+})
+
+
+// ##################
+document.getElementById("pilot").addEventListener("click",function(){
+  window.location.assign("#");
+})
+// #####################
+
+// ##################
+document.getElementById("routines").addEventListener("click",function(){
+  window.location.assign("#");
+})
+// #####################
+
+
+document.getElementById("articles").addEventListener("click",function(){
+  window.location.assign("./expert.html");
+})
+
+
+
+document.getElementById("receipes").addEventListener("click",function(){
+  window.location.assign("./healthy_living.html");
+})
+
+
+
+document.getElementById("wellnessVideos").addEventListener("click",function(){
+  window.location.assign("./wellness_videos.html");
+})
+
+
+// ##################
+document.getElementById("blog").addEventListener("click",function(){
+  window.location.assign("#");
+})
+// #####################
+
+// ##################
+document.getElementById("whatNew").addEventListener("click",function(){
+  window.location.assign("#");
+})
+// #####################
+
+
+document.getElementById("about1").addEventListener("click",function(){
+  window.location.assign("./about.html");
+})
+
+// ########################
+document.getElementById("careers").addEventListener("click",function(){
+  window.location.assign("./careers.html");
+})
+// ###########################
+
+// ##################
+document.getElementById("tut").addEventListener("click",function(){
+  window.location.assign("./tutorials.html");
+})
+// #####################
+
+// ##################
+document.getElementById("ourTeam").addEventListener("click",function(){
+  window.location.assign("./ourteam.html");
+})
+// #####################
+
+
+document.getElementById("cart").addEventListener("click",function(){
+  window.location.assign("./payment.html");
+})
