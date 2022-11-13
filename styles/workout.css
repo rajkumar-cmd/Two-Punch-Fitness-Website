@@ -139,19 +139,19 @@
 }
 
 .filter_btn {
-  border: 3px solid #8292B4;
+  border: 3px solid #808080;
   height: 50px;
   width: 130px;
   background-color: white;
-  color: #8292B4;
+  color: #808080;
   cursor: pointer;
 }
 .search_btn {
-  border: 3px solid #8292B4;
+  border: 3px solid #808080;
   height: 50px;
   width: 130px;
   background-color: white;
-  color: #8292B4;
+  color: #808080;
   margin-left: -5px;
   cursor: pointer;
 }

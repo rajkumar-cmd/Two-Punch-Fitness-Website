@@ -23,6 +23,92 @@ search_btn.onclick = () => {
     }
 };
 
+// Prep Time
+document.querySelector("#prep5").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=5`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#prep15").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=15`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#prep30").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prepTime_lte=30`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+
+// Cook Time
+document.querySelector("#min5").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=5`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min10").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=10`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min15").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=15`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#min20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?cookTime_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+
+// prise
+document.querySelector("#pri10").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prise_lte=10`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#pri15").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prise_lte=15`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#pri20").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prise_lte=20`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#pri25").addEventListener("change",async()=>{
+    let res=await fetch(`http://localhost:3000/recipes?prise_lte=25`);
+    let data=await res.json();
+    let components=document.getElementById("components");
+    appendWorkoutData(data,components);
+    createButtons(data.length,12);
+})
+document.querySelector("#filterReset").addEventListener("click",async()=>{
+    window.location.reload();
+})
+
 const getData=async()=>{
     let res=await fetch(`http://localhost:3000/recipes`);
     let data=await res.json();
@@ -90,6 +176,7 @@ const getPageData=async(clickedBtn,limit)=>{
 getPageData(1,12);
 let buttonDiv=document.getElementById("buttons");
 const createButtons=(data,itemsPerPage)=>{
+    document.getElementById("buttons").innerHTML="";
     const buttons=Math.ceil(data/itemsPerPage);
     for(let i=1;i<=buttons;i++){
         let btn=document.createElement("div");

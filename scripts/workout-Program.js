@@ -28,7 +28,38 @@ search_btn.onclick = () => {
 
 let content_div = document.querySelector("#content");
 
+// Price
+document.querySelector("#doll10").addEventListener("change",async()=>{
+  let res=await fetch(`http://localhost:3000/workout-programs?prise_lte=10`);
+  let data=await res.json();
+  appendindData(data);
+})
+document.querySelector("#doll15").addEventListener("change",async()=>{
+  let res=await fetch(`http://localhost:3000/workout-programs?prise_lte=15`);
+  let data=await res.json();
+  appendindData(data);
+})
+document.querySelector("#doll20").addEventListener("change",async()=>{
+  let res=await fetch(`http://localhost:3000/workout-programs?prise_lte=20`);
+  let data=await res.json();
+  appendindData(data);
+})
 
+// Week Plan
+document.querySelector("#Week2").addEventListener("change",async()=>{
+  let res=await fetch(`http://localhost:3000/workout-programs?week-plan_lte=2&week-plan_gte=2`);
+  let data=await res.json();
+  appendindData(data);
+})
+document.querySelector("#Week8").addEventListener("change",async()=>{
+  let res=await fetch(`http://localhost:3000/workout-programs?week-plan_lte=8&week-plan_gte=8`);
+  let data=await res.json();
+  appendindData(data);
+})
+
+document.querySelector("#filterReset").addEventListener("click",async()=>{
+  window.location.reload();
+})
 
 let fetchData = async () => {
   try {
@@ -45,6 +76,7 @@ fetchData();
 
 let appendindData = (input) => {
   let cards_container = document.querySelector("#content");
+  document.querySelector("#content").innerHTML="";
   input.forEach((el)=>{
     let cont_div= document.createElement("div")
     cont_div.setAttribute("class","cart_div")

@@ -5,26 +5,26 @@ import footer from "../Components/footer.js";
 document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 
-let filter_btn = document.querySelector(".filter_btn");
-let search_btn = document.querySelector(".search_btn");
+// let filter_btn = document.querySelector(".filter_btn");
+// let search_btn = document.querySelector(".search_btn");
 
-filter_btn.onclick = () => {
-  if (document.querySelector("#filter-menu").style.display == "block") {
-    document.querySelector("#filter-menu").style.display = "none";
-  } else {
-    document.querySelector("#filter-menu").style.display = "block";
-    document.querySelector("#search-menu").style.display = "none";
-  }
-};
-search_btn.onclick = () => {
-  if (document.querySelector("#search-menu").style.display === "block") {
-    document.querySelector("#search-menu").style.display = "none";
-    document.querySelector("#filter-menu").style.display = "none";
-  } else {
-    document.querySelector("#search-menu").style.display = "block";
-    document.querySelector("#filter-menu").style.display = "none";
-  }
-};
+// filter_btn.onclick = () => {
+//   if (document.querySelector("#filter-menu").style.display == "block") {
+//     document.querySelector("#filter-menu").style.display = "none";
+//   } else {
+//     document.querySelector("#filter-menu").style.display = "block";
+//     document.querySelector("#search-menu").style.display = "none";
+//   }
+// };
+// search_btn.onclick = () => {
+//   if (document.querySelector("#search-menu").style.display === "block") {
+//     document.querySelector("#search-menu").style.display = "none";
+//     document.querySelector("#filter-menu").style.display = "none";
+//   } else {
+//     document.querySelector("#search-menu").style.display = "block";
+//     document.querySelector("#filter-menu").style.display = "none";
+//   }
+// };
 
 let content_div = document.querySelector("#content");
 
